@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 807812803
+CRC: 2847114321
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -63,125 +63,125 @@ AssetBundleManifest:
       Name: allassets/spritepackage/common/uplevel.unity3d
       Dependencies: {}
     Info_20:
-      Name: allassets/resourceart/model/building/dige_ziyuan.unity3d
-      Dependencies: {}
-    Info_21:
       Name: allassets/spritepackage/buildingicon/caishichang.unity3d
       Dependencies: {}
-    Info_22:
+    Info_21:
       Name: allassets/spritepackage/buildingicon/daditu_caishichang.unity3d
       Dependencies: {}
-    Info_23:
+    Info_22:
       Name: allassets/spritepackage/buildingicon/shichang.unity3d
       Dependencies: {}
-    Info_24:
+    Info_23:
       Name: allassets/spritepackage/common/normal.unity3d
       Dependencies: {}
-    Info_25:
+    Info_24:
       Name: allassets/spritepackage/buildingicon/cangbingdong.unity3d
       Dependencies: {}
-    Info_26:
+    Info_25:
       Name: allassets/spritepackage/common/btn_04.unity3d
       Dependencies: {}
-    Info_27:
+    Info_26:
       Name: allassets/spritepackage/buildingicon/dijiao.unity3d
       Dependencies: {}
-    Info_28:
+    Info_27:
       Name: allassets/spritepackage/buildingicon/duanzaochang.unity3d
       Dependencies: {}
-    Info_29:
+    Info_28:
       Name: allassets/spritepackage/resourceicon/resouce_stone.unity3d
       Dependencies: {}
-    Info_30:
+    Info_29:
       Name: allassets/spritepackage/buildingicon/dabenying.unity3d
       Dependencies: {}
-    Info_31:
+    Info_30:
       Name: allassets/spritepackage/buildingicon/liaowangta.unity3d
       Dependencies: {}
-    Info_32:
+    Info_31:
       Name: allassets/spritepackage/resourceicon/resouce_iron.unity3d
       Dependencies: {}
-    Info_33:
+    Info_32:
       Name: allassets/spritepackage/common/btn_qieye.unity3d
       Dependencies: {}
-    Info_34:
+    Info_33:
       Name: allassets/spritepackage/buildingicon/nongchang.unity3d
       Dependencies: {}
-    Info_35:
+    Info_34:
       Name: allassets/spritepackage/buildingicon/famuchang.unity3d
       Dependencies: {}
-    Info_36:
+    Info_35:
       Name: allassets/spritepackage/buildingicon/kuangmai.unity3d
       Dependencies: {}
-    Info_37:
+    Info_36:
       Name: allassets/spritepackage/buildingicon/daditu_kuangmai.unity3d
       Dependencies: {}
-    Info_38:
+    Info_37:
       Name: allassets/spritepackage/buildingicon/jianyu.unity3d
       Dependencies: {}
-    Info_39:
+    Info_38:
       Name: allassets/spritepackage/common/btn_01.unity3d
       Dependencies: {}
-    Info_40:
+    Info_39:
       Name: allassets/spritepackage/common/bottom frame04.unity3d
       Dependencies: {}
-    Info_41:
+    Info_40:
       Name: allassets/spritepackage/common/buildinfo.unity3d
       Dependencies: {}
-    Info_42:
+    Info_41:
       Name: allassets/spritepackage/buildingicon/chengqiang.unity3d
       Dependencies: {}
-    Info_43:
-      Name: allassets/resourceart/texture/wm_base.unity3d
-      Dependencies: {}
-    Info_44:
+    Info_42:
       Name: allassets/spritepackage/buildingicon/daditu_zuanshi.unity3d
       Dependencies: {}
-    Info_45:
-      Name: allassets/resourceart/model/shader/common_diff.unity3d
-      Dependencies: {}
-    Info_46:
+    Info_43:
       Name: allassets/prefab/dontdestroy/dontdestroy.unity3d
       Dependencies:
         Dependency_0: allassets/spritepackage/common/btn_01.unity3d
-    Info_47:
+    Info_44:
       Name: allassets/resourceart/material/uguigray.unity3d
       Dependencies: {}
-    Info_48:
-      Name: allassets/resourceart/model/building/materials/dige_ziyuan.unity3d
-      Dependencies:
-        Dependency_0: allassets/resourceart/model/building/dige_ziyuan.unity3d
-    Info_49:
+    Info_45:
       Name: allassets/prefab/building/dige_ziyuan.unity3d
       Dependencies:
-        Dependency_0: allassets/resourceart/model/building/materials/dige_ziyuan.unity3d
-        Dependency_1: allassets/resourceart/model/building/dige.unity3d
-    Info_50:
+        Dependency_0: allassets/resourceart/model/building/dige/fbx/dige.unity3d
+        Dependency_1: allassets/resourceart/model/building/dige/material/dige_ziyuan.unity3d
+    Info_46:
       Name: allassets/resourceart/model/map/maptexture.unity3d
       Dependencies:
-        Dependency_0: allassets/resourceart/texture/wm_base.unity3d
-    Info_51:
+        Dependency_0: allassets/resourceart/model/map/texture/wm_base.unity3d
+    Info_47:
       Name: allassets/prefab/ui/logincontrollerpanel.unity3d
       Dependencies:
         Dependency_0: allassets/spritepackage/common/btn_01.unity3d
-    Info_52:
+    Info_48:
       Name: allassets/table/language.unity3d
       Dependencies: {}
-    Info_53:
+    Info_49:
       Name: allassets/table/city_area.unity3d
       Dependencies: {}
-    Info_54:
+    Info_50:
       Name: allassets/table/city_default.unity3d
       Dependencies: {}
-    Info_55:
+    Info_51:
       Name: allassets/table/building_des.unity3d
       Dependencies: {}
-    Info_56:
+    Info_52:
       Name: allassets/table/resource.unity3d
       Dependencies: {}
-    Info_57:
+    Info_53:
       Name: allassets/table/build.unity3d
       Dependencies: {}
+    Info_54:
+      Name: allassets/resourceart/model/building/dige/fbx/dige.unity3d
+      Dependencies: {}
+    Info_55:
+      Name: allassets/resourceart/model/building/dige/texture/dige_ziyuan.unity3d
+      Dependencies: {}
+    Info_56:
+      Name: allassets/resourceart/model/building/dige/material/dige_ziyuan.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/building/dige/texture/dige_ziyuan.unity3d
+    Info_57:
+      Name: allassets/resourceart/model/map/texture/wm_base.unity3d
+      Dependencies: {}
     Info_58:
-      Name: allassets/resourceart/model/building/dige.unity3d
+      Name: allassets/resourceart/shader/common_diff.unity3d
       Dependencies: {}

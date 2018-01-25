@@ -10,24 +10,25 @@ public class EventTest : MonoBehaviour {
 		
 	}
 
-    UIPanelState state = UIPanelState.None;
-        // Update is called once per frame
-        void Update () {
-		if (Input.GetKeyDown(KeyCode.W))
-        {
-            EventManage.Instance.AddEventListener(1, OnEvent);
-        }
+    //UIPanelState state = UIPanelState.None;
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.W))
+    //    {
+    //        EventManage.Instance.AddEventListener(1, OnEvent);
+    //    }
 
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            EventManage.Instance.RemoveEventLister(1, OnEvent);
-        }
+    //    if (Input.GetKeyDown(KeyCode.S))
+    //    {
+    //        EventManage.Instance.RemoveEventLister(1, OnEvent);
+    //    }
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            EventManage.Instance.DispachEvent(1, 100);
-        }
-	}
+    //    if (Input.GetKeyDown(KeyCode.Q))
+    //    {
+    //        EventManage.Instance.DispachEvent(1, 100);
+    //    }
+    //}
 
     public void OnEvent(int type, object data)
     {

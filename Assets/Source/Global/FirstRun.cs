@@ -7,6 +7,10 @@ public class FirstRun : MonoBehaviour {
     private int count = 0;
     private void Awake()
     {
+    }
+
+    private void Start()
+    {
         LoadGlobalPrefabs();
     }
 

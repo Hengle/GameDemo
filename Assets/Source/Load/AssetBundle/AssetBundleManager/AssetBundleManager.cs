@@ -53,28 +53,6 @@ public class AssetBundleManager {
         get { return errorCache; }
     }
 
-    private HashSet<string> loadingUrl = new HashSet<string>();
-    public void AddLoading(string key)
-    {
-        if (!loadingUrl.Contains(key))
-        {
-            loadingUrl.Add(key);
-        }
-    }
-
-    public void DelLoading(string key)
-    {
-        if (loadingUrl.Contains(key))
-        {
-            loadingUrl.Remove(key);
-        }
-    }
-
-    public bool IsLoading(string key)
-    {
-        return loadingUrl.Contains(key);
-    }
-
     /// <summary>
     /// 是否缓存了资源数据
     /// </summary>

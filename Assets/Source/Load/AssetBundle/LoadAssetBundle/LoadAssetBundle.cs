@@ -20,6 +20,28 @@ public class LoadAssetBundle
     public AssetBundleManifest assetBundleManifest = null;
     public bool isLoadingAssetBundleMainfest = false;
 
+    private HashSet<string> loadingUrl = new HashSet<string>();
+    private void AddLoading(string key)
+    {
+        if (!loadingUrl.Contains(key))
+        {
+            loadingUrl.Add(key);
+        }
+    }
+
+    private void DelLoading(string key)
+    {
+        if (loadingUrl.Contains(key))
+        {
+            loadingUrl.Remove(key);
+        }
+    }
+
+    private bool IsLoading(string key)
+    {
+        return loadingUrl.Contains(key);
+    }
+
     /// <summary>
     /// 加载 AB 资源
     /// </summary>
@@ -28,24 +50,8 @@ public class LoadAssetBundle
     /// <returns></returns>
     private IEnumerator LoadAB(string url, LoadABCallBack loadABCallBack)
     {
-        AssetBundleData assetBundleData = AssetBundleManager.Instance.GetAssetBundleData(url);
-        // 获取到的数据不为空就不再重新加载了
-        if (assetBundleData != null)
-        {
-            yield break;
-        }
-
-        if (AssetBundleManager.Instance.IsLoading(url))
-        {
-            yield break;
-        }
-
-        AssetBundleManager.Instance.AddLoading(url);
-
-        WWW www = WWW.LoadFromCacheOrDownload(url, 0);
+        WWW www = new WWW(url);
         yield return www;
-
-        AssetBundleManager.Instance.DelLoading(url);
 
         if (!string.IsNullOrEmpty(www.error))
         {
@@ -62,27 +68,6 @@ public class LoadAssetBundle
         }
 
         yield break;
-
-        // 缓存中没有需要加载的数据，重新加载
-        //string loadUrl = url;
-        //if (url.StartsWith("file://"))
-        //{
-        //    loadUrl = url.Substring(("file://").Length);
-        //}
-        //AssetBundleCreateRequest assetBundleCreateRequest = AssetBundle.LoadFromFileAsync(loadUrl);
-
-        //yield return assetBundleCreateRequest;
-
-        //if (assetBundleCreateRequest.isDone)
-        //{
-        //    AssetBundleData newAssetBundleData = AssetBundleManager.Instance.AddAssetBundle(url); //new AssetBundleData();
-        //    newAssetBundleData.m_AssetBundle = assetBundleCreateRequest.assetBundle;
-
-        //    if (loadABCallBack != null)
-        //    {
-        //        loadABCallBack(newAssetBundleData);
-        //    }
-        //}
     }
 
     /// <summary>
@@ -94,6 +79,11 @@ public class LoadAssetBundle
     /// <returns></returns>
     public IEnumerator LoadAsset(string assetPath, LoadABCallBack loadABCallBack, string assetBundleName)
 	{
+        while (IsLoading(assetPath))
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
         {
             // 从管理器中获取加载数据
             AssetBundleData assetBundleData = AssetBundleManager.Instance.GetAssetBundleData(assetPath);
@@ -121,12 +111,12 @@ public class LoadAssetBundle
 			yield break;
 		}
 
+        AddLoading(assetPath);
+
         // 加载依赖资源
         // 获取依赖资源数据
         string[] depends = assetBundleManifest.GetAllDependencies(assetBundleName);
-
         int count = depends.Length;
-        count = 0;
         if (count > 0)
         {
             AssetBundleManager.Instance.SetDepends(assetBundleName, depends);
@@ -135,7 +125,7 @@ public class LoadAssetBundle
         for (int i = 0; i < count; ++i)
         {
             string url = ResourcePathManager.Instance.CheckFilePath(ResourcePathManager.Instance.GetPersistentDataPath, "AssetBundle/" + depends[i]);
-
+            url = url.ToLower();
             AssetBundleData assetBundleData = AssetBundleManager.Instance.GetAssetBundleData(url);
             // 获取到的数据不为空就不再重新加载了
             if (assetBundleData != null)
@@ -146,7 +136,13 @@ public class LoadAssetBundle
             yield return Game.Instance.StartCoroutine(LoadAB(url, null));
         }
 
-        yield return Game.Instance.StartCoroutine(LoadAB(assetPath, loadABCallBack));
+        LoadABCallBack CallBack = delegate (AssetBundleData assetBundleData)
+        {
+            DelLoading(assetPath);
+            loadABCallBack(assetBundleData);
+        };
+
+        yield return Game.Instance.StartCoroutine(LoadAB(assetPath, CallBack));
 	}
     //AB.Unload  卸载 AssetBundl：
     //参数 false 只卸载 AssetBundl 资源，已经从 AssetBundle 资源中 Load 并且实例化出来的对象不会被释放

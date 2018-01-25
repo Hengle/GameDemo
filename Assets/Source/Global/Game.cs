@@ -20,7 +20,6 @@ public class Game : MonoBehaviour {
     {
         AssetBundleManager.Instance.Init();
         LoadTableData.Instance.LoadAllTable();
-        AccountManage.Instance.Init();
     }
 
     private void OnFrame()

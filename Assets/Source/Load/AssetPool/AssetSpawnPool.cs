@@ -116,13 +116,11 @@ public class AssetSpawnPool
         string url = ResourcePathManager.Instance.GetLoadPath(_assetPath);
         url = url.ToLower();
 		string _assetBundleName = Path.ChangeExtension(_assetPath, ResourcePathManager.abExtension).ToLower();
-
+        // allassets/prefab/building/dige_ziyuan.unity3d
         // 加载资源回调
         LoadABCallBack loadABCallBack = delegate (AssetBundleData assetBundleData)
         {
             HP.m_assetBundleData = assetBundleData;
-            //Game.Instance.StartCoroutine(LoadAsyncAssetFromAB<T>(HP, CallBack, useType));
-
             // 异步加载同时调用两次会卡死主线程
             //.m_AssetBundle.LoadAssetAsync<T>(p_handleParam.assetName);
             HP.assetObj = assetBundleData.m_AssetBundle.LoadAsset<T>(HP.assetName);
@@ -135,11 +133,6 @@ public class AssetSpawnPool
 
         Game.Instance.StartCoroutine(LoadAssetBundle.Instance.LoadAsset(url, loadABCallBack, _assetBundleName));
     }
-
-    //public void LoadScene(string sceneName, out AsyncOperation asyncOption)
-    //{
-    //    asyncOption = SceneManager.LoadSceneAsync(sceneName);
-    //}
 
     public void LoadScene(string sceneName, LoadCallBackHandler CallBack)
     {
@@ -172,42 +165,6 @@ public class AssetSpawnPool
             SceneManager.LoadScene(HP.assetName);
         };
         LoadAssetBundle.Instance.LoadScene(url, sceneName, _assetBundleName, loadABCallBack);
-    }
-
-    /// <summary>
-    /// 从资源包中加载资源
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <param name="p_handleParam"></param>
-    /// <param name="CallBack"></param>
-    /// <param name="useType"></param>
-    /// <returns></returns>
-    private IEnumerator LoadAsyncAssetFromAB<T>(HandlerParam p_handleParam, LoadCallBackHandler loadCallBack, bool useType = false) where T : UnityEngine.Object
-    {
-        AssetBundleRequest assetBundleRequest = null;
-        if (useType)
-        {
-            // 异步加载同时调用两次会卡死主线程
-            //assetBundleRequest = p_handleParam.m_assetBundleData.m_AssetBundle.LoadAssetAsync<T>(p_handleParam.assetName);
-            //yield return assetBundleRequest;
-            p_handleParam.assetObj = p_handleParam.m_assetBundleData.m_AssetBundle.LoadAsset<T>(p_handleParam.assetName);
-        }
-        else
-        {
-            // 异步加载同时调用两次会卡死主线程
-            //assetBundleRequest = p_handleParam.m_assetBundleData.m_AssetBundle.LoadAssetAsync(p_handleParam.assetName, typeof(T));
-            //yield return assetBundleRequest;
-            p_handleParam.assetObj = p_handleParam.m_assetBundleData.m_AssetBundle.LoadAsset(p_handleParam.assetName);
-        }
-
-        yield return new WaitForEndOfFrame();
-        //p_handleParam.assetObj = assetBundleRequest.asset;
-
-        if (loadCallBack != null)
-        {
-            loadCallBack(p_handleParam);
-        }
-        yield break;
     }
 
     private void LoadAsset<T>(string _assetPath, LoadCallBackHandler loadCallBack, HandlerParam HP) where T : UnityEngine.Object

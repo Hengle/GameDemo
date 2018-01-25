@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2247363877
+CRC: 3275353458
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7d13ffa4746d6bd4d10a6fccb3448a05
+    Hash: 3f9b628b1046fea14968f27e6baaf2dd
   TypeTreeHash:
     serializedVersion: 2
     Hash: 0b04a37228feb7b9c312fb0cfbaa19c4
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/AllAssets/ResourceArt/Model/Map/MapTexture.mat
 Dependencies:
-- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/texture/wm_base.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/map/texture/wm_base.unity3d
