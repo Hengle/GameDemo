@@ -7,6 +7,8 @@ public class Game : MonoBehaviour {
     {
         Instance = this;
         Init();
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -24,7 +26,6 @@ public class Game : MonoBehaviour {
     private void OnFrame()
     {
         AssetBundleManager.Instance.OnFrame();
-        TimeFrameManage.OnFrame(Time.fixedDeltaTime);
         //DebugTest();
     }
 }

@@ -98,7 +98,7 @@ public class LoginControllerPanel : UIBase
 
     private void LanguageDropDownChange(int value)
     {
-        LanguageString.languageType = (value == 0) ? LANGUAGE_TYPE.CN : LANGUAGE_TYPE.EN;
+        //LanguageString.languageType = (value == 0) ? LANGUAGE_TYPE.CN : LANGUAGE_TYPE.EN;
     }
 
     private void ServerDropDownChange(int value)

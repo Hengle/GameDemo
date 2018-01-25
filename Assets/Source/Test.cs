@@ -34,5 +34,6 @@ public class Test : MonoBehaviour {
         }
 
         GameObject go = Instantiate(handlerParam.assetObj) as GameObject;
+        go.name = "dige";
     }
 }
