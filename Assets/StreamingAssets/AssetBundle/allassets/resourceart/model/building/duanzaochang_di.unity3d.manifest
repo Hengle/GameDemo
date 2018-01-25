@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3469130055
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 372e8ecc5c5cfdfe5f1ce46ce924d597
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/duanzaochang_di.png
+Dependencies: []

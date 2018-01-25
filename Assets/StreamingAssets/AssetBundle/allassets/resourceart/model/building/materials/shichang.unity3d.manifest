@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 173920718
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 55a66f384b492f23f528c9c655d27c89
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0b04a37228feb7b9c312fb0cfbaa19c4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/Materials/shichang.mat
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/shichang.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/shader/common_diff.unity3d

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1432491311
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 77a46a31e8317447ea135ad7787edefd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0b04a37228feb7b9c312fb0cfbaa19c4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/Materials/xueyuan.mat
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/xueyuan.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/shader/common_diff.unity3d

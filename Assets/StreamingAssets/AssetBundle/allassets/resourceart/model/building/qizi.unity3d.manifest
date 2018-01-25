@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 3810160344
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 735f061a2ad4bcc1ea7b860a36e0d774
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c90a944cc82be93987004a10491634c4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/qizi.FBX
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/materials/cn.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/materials/qigan.unity3d

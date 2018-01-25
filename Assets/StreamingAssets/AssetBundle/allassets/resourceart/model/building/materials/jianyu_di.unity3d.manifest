@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 434554972
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2e0551bb59613bc9b354127c74c9e43c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0b04a37228feb7b9c312fb0cfbaa19c4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/Materials/jianyu_di.mat
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/jianyu_di.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/shader/common_diff.unity3d

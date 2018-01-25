@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2464024377
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ea6fd9324a5a5bb25a9f8b6ac1e4563c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/caishichang_di.png
+Dependencies: []

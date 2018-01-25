@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 3818682352
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a1f00ac24102c17f3a40aa1067113d7c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e69cf4aea34f06169d815d14bb7707cf
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/Materials/No Name.mat
+Dependencies: []

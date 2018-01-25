@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 88018157
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 12fae86ed375f76e439795f7937d4433
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 28f70660cf1af36d2117d334a9963d20
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 09d521a617886d44caae9e41ce6a6c64, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 785a80e93763f458785ec569a3958c04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ed31858b5e02f3a4aa7d557e4b9f76d4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e49942ae7b606104b84138c2c6be0fb3, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/Prefab/UI/BuildFunctionPreviewpControllerPanel.prefab
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/spritepackage/common/close.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/spritepackage/common/btn_04.unity3d

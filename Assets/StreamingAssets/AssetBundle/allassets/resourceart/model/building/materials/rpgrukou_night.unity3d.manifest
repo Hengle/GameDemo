@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2544629636
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 425fa8a5257d368b97b3bba3f55e9371
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0b04a37228feb7b9c312fb0cfbaa19c4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/Materials/rpgrukou_Night.mat
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/rpgrukou.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/shader/common_diff.unity3d

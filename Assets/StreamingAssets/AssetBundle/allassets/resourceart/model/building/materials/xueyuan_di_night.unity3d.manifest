@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1573661349
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 290f6646e9124b950f835b21096fdd4b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0b04a37228feb7b9c312fb0cfbaa19c4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/Materials/xueyuan_di_Night.mat
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/yiyuan_di.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/shader/common_diff.unity3d

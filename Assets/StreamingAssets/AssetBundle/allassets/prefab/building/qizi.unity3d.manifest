@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 2088769477
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1a135d9f849b9c9047c7baffb6c1f106
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e53205b326265a277456ecb8be9ae299
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/Prefab/Building/qizi.prefab
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/qizi.unity3d

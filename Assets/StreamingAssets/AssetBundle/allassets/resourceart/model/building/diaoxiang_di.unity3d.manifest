@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 1812671793
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8c0bb74e27bae8272f9a29782ff7dcbe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1a37411702763d363f7f9e2e24a1d4c5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/diaoxiang_di.png
+- Assets/AllAssets/ResourceArt/Model/Building/diaoxiang_di.FBX
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/materials/no
+  name.unity3d

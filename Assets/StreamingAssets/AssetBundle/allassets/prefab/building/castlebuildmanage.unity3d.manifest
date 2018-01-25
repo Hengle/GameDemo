@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2263356175
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b59ae5e056c33bfab3e5de9bfe9b58f1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 23e647f0a0374df8032f7f0fb31129d6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe64fb8e46ab28b4cb54985e21722a12, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/Prefab/Building/CastleBuildManage.prefab
+Dependencies: []

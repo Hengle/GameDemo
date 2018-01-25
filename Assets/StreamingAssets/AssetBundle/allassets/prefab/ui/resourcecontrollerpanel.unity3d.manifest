@@ -1,0 +1,49 @@
+ManifestFileVersion: 0
+CRC: 3711879512
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3a5dd40099a635952dd1876040e9d455
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 81bf60de84735eb0d03f516b15ffff46
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -2095666955, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 311dba1564868bf4aa1b7c6650ef4af0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 785a80e93763f458785ec569a3958c04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e49942ae7b606104b84138c2c6be0fb3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b551402fc1ca3314eb7a7699af9c92c4, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/Prefab/UI/ResourceControllerPanel.prefab
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/spritepackage/resourceicon/resouce_food.unity3d

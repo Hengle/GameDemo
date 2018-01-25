@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 1841433520
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2cffe80c8ce3645a4eab6e86a9ec2906
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ed285619ca5fab685f3f910773b55392
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/Prefab/Building/TaDiao.prefab
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/tadiao_001.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/materials/tadiao_001.unity3d

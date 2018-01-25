@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 1526510350
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 13de798707810109525ed4f9bfedeb84
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d1328fbcb89dbfee95f3fe39c116c189
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/Prefab/Building/yiyuan.prefab
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/yiyuan.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/materials/yiyuan_night.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/building/materials/xueyuan_di_night.unity3d

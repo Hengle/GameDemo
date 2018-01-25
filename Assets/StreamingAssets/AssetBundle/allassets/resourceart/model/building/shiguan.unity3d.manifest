@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 69241034
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b963f345824e1f5bad9f1f34325276c4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d4e22bca998c188582dba61b6c905222
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/shiguan.tga
+- Assets/AllAssets/ResourceArt/Model/Building/shiguan.FBX
+Dependencies: []

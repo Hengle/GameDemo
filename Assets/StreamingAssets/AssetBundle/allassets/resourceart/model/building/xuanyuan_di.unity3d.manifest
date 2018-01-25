@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2477342607
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: eccc9231b85ef5dc22e1c65449e0a39d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/xuanyuan_di.png
+Dependencies: []

@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1855045831
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7e4628be39dda024e8ca240b3e2cc680
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/ResourceArt/Model/Building/dijiao_di.png
+Dependencies: []
