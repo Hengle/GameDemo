@@ -26,6 +26,11 @@ public class AssetPool
     /// 数据配置表
     /// </summary>
     private AssetSpawnPool _TableData;
+
+    /// <summary>
+    /// Npc
+    /// </summary>
+    private AssetSpawnPool _Npc;
     
     /// <summary>
     /// UI
@@ -62,6 +67,12 @@ public class AssetPool
         _TableData.IsAsynchLoad = true;
         _TableData.Extension = ".txt";
 
+        _Npc = new AssetSpawnPool("Npc");
+        _Npc.AssetPath = "AllAssets/Prefab/NPC/";
+        _Npc.IsUsePool = false;
+        _Npc.IsAsynchLoad = true;
+        _Npc.Extension = ".prefab";
+
         _UI = new AssetSpawnPool("UI");
         _UI.AssetPath = "AllAssets/Prefab/UI/";
         _UI.IsUsePool = false;
@@ -94,6 +105,11 @@ public class AssetPool
     /// 数据配置表
     /// </summary>
     public AssetSpawnPool TableData { get { return _TableData; } }
+
+    /// <summary>
+    /// NPC
+    /// </summary>
+    public AssetSpawnPool Npc { get { return _Npc; } }
 
     /// <summary>
     /// UI

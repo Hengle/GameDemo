@@ -63,7 +63,7 @@ public class LoadTableData {
             return null;
         }
         
-        List<PropertyInfo> propertyInfoList = GetPropertyInfoList(tableName, rowData[2]);
+        List<PropertyInfo> propertyInfoList = GetPropertyInfoList(tableName, rowData[1]);
         for (int i = 3; i < rowData.Length; ++i)
         {
             // 实例化一个 T 类对象

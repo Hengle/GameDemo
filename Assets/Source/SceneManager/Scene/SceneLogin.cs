@@ -18,7 +18,7 @@ public class SceneLogin : SceneBase
     {
         UIManage.Instance.CloseAllUI();
 
-        SceneCastle.m_isFirstLogin = true;
+        SceneBattle.m_isFirstLogin = true;
         LoadLoginUI();
     }
 

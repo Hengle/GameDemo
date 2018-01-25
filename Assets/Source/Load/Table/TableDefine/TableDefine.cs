@@ -7,40 +7,23 @@ using System;
 public enum TableType
 {
     /// <summary>
-    /// 建筑属性
+    /// 文本语言表
     /// </summary>
-    BuildingData,
+    Language,
+
     /// <summary>
-    /// 建筑描述
+    /// Npc 表
     /// </summary>
-    BuildingDesData,
-    /// <summary>
-    /// 区域表
-    /// </summary>
-    CityAreaData,
-    /// <summary>
-    /// 地格默认建筑表
-    /// </summary>
-    CityDefault,
-    /// <summary>
-    /// 多语言文本
-    /// </summary>
-    LanguageData,
-    /// <summary>
-    /// 资源表
-    /// </summary>
-    Resource,
+    Npc,
+
     None,
 }
 
 public class TableDefine
 {
-    private readonly static string building             = "build";
-    private readonly static string building_des         = "building_des";
-    private readonly static string cityArea             = "city_area";
-    private readonly static string cityDefault          = "city_default";
-    private readonly static string language             = "language";
-    private readonly static string resource             = "resource";
+    private readonly static string language        = "Language";
+    private readonly static string npc             = "Npc";
+    
 
     private static Dictionary<string, object> ObjectDic = new Dictionary<string, object>();
 
@@ -48,23 +31,11 @@ public class TableDefine
     static TableDefine()
     {
         ObjectDic.Clear();
-        ObjectDic[building]                         = new BuildData();
-        TableTypeDic[TableType.BuildingData]        = building;
-
-        ObjectDic[building_des]                     = new BuildingDesData();
-        TableTypeDic[TableType.BuildingDesData]     = building_des;
-
-        ObjectDic[cityArea]                         = new CityAreaData();
-        TableTypeDic[TableType.CityAreaData]        = cityArea;
-
-        ObjectDic[cityDefault]                      = new CityDefaultData();
-        TableTypeDic[TableType.CityDefault]         = cityDefault;
-
         ObjectDic[language]                         = new LanguageData();
-        TableTypeDic[TableType.LanguageData]        = language;
+        TableTypeDic[TableType.Language]            = language;
 
-        ObjectDic[resource]                         = new ResourceData();
-        TableTypeDic[TableType.Resource]            = resource;
+        ObjectDic[npc]                              = new NpcData();
+        TableTypeDic[TableType.Npc]                 = npc;
     }
 
     public static object GetTableType(string tableName)

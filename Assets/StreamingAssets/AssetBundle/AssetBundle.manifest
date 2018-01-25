@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1103116584
+CRC: 1256818632
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -154,33 +154,149 @@ AssetBundleManifest:
       Name: allassets/table/language.unity3d
       Dependencies: {}
     Info_49:
-      Name: allassets/table/city_area.unity3d
-      Dependencies: {}
-    Info_50:
-      Name: allassets/table/city_default.unity3d
-      Dependencies: {}
-    Info_51:
-      Name: allassets/table/building_des.unity3d
-      Dependencies: {}
-    Info_52:
-      Name: allassets/table/resource.unity3d
-      Dependencies: {}
-    Info_53:
-      Name: allassets/table/build.unity3d
-      Dependencies: {}
-    Info_54:
       Name: allassets/resourceart/model/building/dige/fbx/dige.unity3d
       Dependencies: {}
-    Info_55:
+    Info_50:
       Name: allassets/resourceart/model/building/dige/texture/dige_ziyuan.unity3d
       Dependencies: {}
-    Info_56:
+    Info_51:
       Name: allassets/resourceart/model/building/dige/material/dige_ziyuan.unity3d
       Dependencies:
         Dependency_0: allassets/resourceart/model/building/dige/texture/dige_ziyuan.unity3d
-    Info_57:
+    Info_52:
       Name: allassets/resourceart/model/map/texture/wm_base.unity3d
       Dependencies: {}
-    Info_58:
+    Info_53:
       Name: allassets/resourceart/shader/common_diff.unity3d
+      Dependencies: {}
+    Info_54:
+      Name: allassets/table/npc.unity3d
+      Dependencies: {}
+    Info_55:
+      Name: allassets/resourceart/model/cha_knight/models/materials/cha_knight-face.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_knight/textures/cha_knight.unity3d
+    Info_56:
+      Name: allassets/resourceart/model/cha_knight/models/materials/cha_knight-shadow.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_knight/textures/shadow.unity3d
+    Info_57:
+      Name: allassets/resourceart/model/cha_knight/models/cha_knight.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_knight/models/materials/cha_knight-face.unity3d
+        Dependency_1: allassets/resourceart/model/cha_knight/models/materials/cha_knight-shadow.unity3d
+        Dependency_2: allassets/resourceart/model/cha_knight/models/materials/cha_knight-sword02.unity3d
+        Dependency_3: allassets/resourceart/model/cha_knight/models/materials/cha_knight-bougu.unity3d
+    Info_58:
+      Name: allassets/resourceart/model/cha_knight/motions/mot_knight@dead.unity3d
+      Dependencies: {}
+    Info_59:
+      Name: allassets/resourceart/model/cha_knight/motions/mot_knight@wait.unity3d
+      Dependencies: {}
+    Info_60:
+      Name: allassets/resourceart/model/cha_knight/textures/cha_knight_sword02.unity3d
+      Dependencies: {}
+    Info_61:
+      Name: allassets/resourceart/model/cha_knight/textures/cha_knight_guard001.unity3d
+      Dependencies: {}
+    Info_62:
+      Name: allassets/resourceart/model/cha_knight/models/materials/cha_knight-sword02.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_knight/textures/cha_knight_sword02.unity3d
+    Info_63:
+      Name: allassets/resourceart/model/cha_knight/textures/cha_knight.unity3d
+      Dependencies: {}
+    Info_64:
+      Name: allassets/resourceart/model/cha_knight/motions/mot_knight@damage.unity3d
+      Dependencies: {}
+    Info_65:
+      Name: allassets/resourceart/model/cha_knight/textures/shadow.unity3d
+      Dependencies: {}
+    Info_66:
+      Name: allassets/resourceart/model/cha_knight/models/materials/cha_knight-bougu.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_knight/textures/cha_knight_guard001.unity3d
+    Info_67:
+      Name: allassets/resourceart/model/cha_knight/motions/mot_knight@attack.unity3d
+      Dependencies: {}
+    Info_68:
+      Name: allassets/resourceart/model/cha_knight/motions/mot_knight@walk.unity3d
+      Dependencies: {}
+    Info_69:
+      Name: allassets/resourceart/model/cha_slime/textures/stg_table.unity3d
+      Dependencies: {}
+    Info_70:
+      Name: allassets/resourceart/model/cha_slime/textures/cha_slimblue.unity3d
+      Dependencies: {}
+    Info_71:
+      Name: allassets/resourceart/model/cha_slime/motions/mot_slime@damage.unity3d
+      Dependencies: {}
+    Info_72:
+      Name: allassets/resourceart/model/cha_slime/motions/mot_slime@walk.unity3d
+      Dependencies: {}
+    Info_73:
+      Name: allassets/resourceart/model/cha_slime/textures/cha_slimyellow.unity3d
+      Dependencies: {}
+    Info_74:
+      Name: allassets/resourceart/model/cha_slime/models/materials/stg_table.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_slime/textures/stg_table.unity3d
+    Info_75:
+      Name: allassets/resourceart/model/cha_slime/motions/mot_slime@wait.unity3d
+      Dependencies: {}
+    Info_76:
+      Name: allassets/resourceart/model/cha_slime/textures/cha_slimred.unity3d
+      Dependencies: {}
+    Info_77:
+      Name: allassets/resourceart/model/cha_slime/motions/mot_slime@attack.unity3d
+      Dependencies: {}
+    Info_78:
+      Name: allassets/resourceart/model/cha_slime/models/materials/cha_slime-phong2.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_slime/textures/cha_slimgreen.unity3d
+    Info_79:
+      Name: allassets/resourceart/model/cha_slime/models/cha_slime.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_slime/models/materials/cha_slime-phong2.unity3d
+    Info_80:
+      Name: allassets/resourceart/model/cha_slime/models/materials/background.unity3d
+      Dependencies: {}
+    Info_81:
+      Name: allassets/resourceart/model/cha_slime/models/stg_floor.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_slime/models/materials/stg_table.unity3d
+    Info_82:
+      Name: allassets/resourceart/model/cha_slime/motions/mot_slime@dead.unity3d
+      Dependencies: {}
+    Info_83:
+      Name: allassets/resourceart/model/cha_slime/textures/cha_slimgreen.unity3d
+      Dependencies: {}
+    Info_84:
+      Name: allassets/prefab/npc/knight.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_knight/models/materials/cha_knight-face.unity3d
+        Dependency_1: allassets/resourceart/model/cha_knight/models/materials/cha_knight-shadow.unity3d
+        Dependency_2: allassets/resourceart/model/cha_knight/models/cha_knight.unity3d
+        Dependency_3: allassets/resourceart/model/cha_knight/motions/mot_knight@dead.unity3d
+        Dependency_4: allassets/resourceart/model/cha_knight/motions/mot_knight@wait.unity3d
+        Dependency_5: allassets/resourceart/model/cha_knight/models/materials/cha_knight-sword02.unity3d
+        Dependency_6: allassets/resourceart/model/cha_knight/motions/mot_knight@damage.unity3d
+        Dependency_7: allassets/resourceart/model/cha_knight/models/materials/cha_knight-bougu.unity3d
+        Dependency_8: allassets/resourceart/model/cha_knight/motions/mot_knight@attack.unity3d
+        Dependency_9: allassets/resourceart/model/cha_knight/motions/mot_knight@walk.unity3d
+    Info_85:
+      Name: allassets/prefab/npc/slime.unity3d
+      Dependencies:
+        Dependency_0: allassets/resourceart/model/cha_slime/motions/mot_slime@damage.unity3d
+        Dependency_1: allassets/resourceart/model/cha_slime/motions/mot_slime@walk.unity3d
+        Dependency_2: allassets/resourceart/model/cha_slime/motions/mot_slime@wait.unity3d
+        Dependency_3: allassets/resourceart/model/cha_slime/motions/mot_slime@attack.unity3d
+        Dependency_4: allassets/resourceart/model/cha_slime/models/materials/cha_slime-phong2.unity3d
+        Dependency_5: allassets/resourceart/model/cha_slime/models/cha_slime.unity3d
+        Dependency_6: allassets/resourceart/model/cha_slime/motions/mot_slime@dead.unity3d
+    Info_86:
+      Name: allassets/resourceart/material/red.unity3d
+      Dependencies: {}
+    Info_87:
+      Name: allassets/resourceart/material/blue.unity3d
       Dependencies: {}

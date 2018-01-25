@@ -1,7 +1,0 @@
-﻿实体ID`实体类型`名称`图标`显示等级`初始值`资源产出间隔(秒)
-int`string`string`string`int`int`int
-id`entType`name`icon`buildlevel`initNum`periodSecond
-200000`RESOURCE`粮食`resouce_food`1`10000`30
-200001`RESOURCE`木材`resouce_wood`1`15000`20
-200002`RESOURCE`石材`resouce_stone`2`0`10
-200003`RESOURCE`铁矿`resouce_iron`3`0`10

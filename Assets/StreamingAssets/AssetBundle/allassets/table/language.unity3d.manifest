@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3634528355
+CRC: 2808419818
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f7f1b1c3e6ed5b60bd00ab5565ea3d35
+    Hash: 92a40c10a3955529b21f63c8ea6602dc
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1033bf7ddfd4c6d43e7a6382c0a0a61a
@@ -12,5 +12,5 @@ ClassTypes:
 - Class: 49
   Script: {instanceID: 0}
 Assets:
-- Assets/AllAssets/Table/language.txt
+- Assets/AllAssets/Table/Language.txt
 Dependencies: []

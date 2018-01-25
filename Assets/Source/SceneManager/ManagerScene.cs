@@ -12,9 +12,9 @@ public enum SceneEnum
     Login       = 1,
 
     /// <summary>
-    /// 主城  
+    /// 战斗
     /// </summary>
-    Castle = 2,
+    Battle = 2,
 
     /// <summary>
     /// 大世界
@@ -31,8 +31,7 @@ public static class ManagerScene  {
     static ManagerScene()
     {
         SceneDic[SceneEnum.Login]        = new SceneLogin();
-        SceneDic[SceneEnum.Castle]       = new SceneCastle();
-        SceneDic[SceneEnum.Kindom]       = new SceneKindom();
+        SceneDic[SceneEnum.Battle]       = new SceneBattle();
     }
 
     // 获取当前场景状态
@@ -126,11 +125,8 @@ public static class ManagerScene  {
             case SceneEnum.Login:
                 mapName = "Login";
                 break;
-            case SceneEnum.Castle:
-                mapName = "Castle";
-                break;
-            case SceneEnum.Kindom:
-                mapName = "Kindom";
+            case SceneEnum.Battle:
+                mapName = "Battle";
                 break;
             default:
                 break;
