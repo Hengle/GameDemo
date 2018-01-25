@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 247178391
+CRC: 2666075652
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fe9ac3643aa304e1f45354805752ee20
+    Hash: 85cdf07a307eb7cd779c99c5088f5047
   TypeTreeHash:
     serializedVersion: 2
-    Hash: fff70525464182b2512f141b657408f4
+    Hash: fa8e0c177117378f2b4033fe16b44b6c
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -15,32 +15,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 20
   Script: {instanceID: 0}
-- Class: 21
-  Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
-- Class: 48
-  Script: {instanceID: 0}
 - Class: 92
   Script: {instanceID: 0}
-- Class: 114
-  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: 853051423, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: -2061169968, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
   Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 - Class: 114
@@ -53,17 +29,9 @@ ClassTypes:
   Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 6f74d4920675db740b0db81d6342bd34, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 785a80e93763f458785ec569a3958c04, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 1980d87fbd378ed4580fd514465a3e87, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 124
-  Script: {instanceID: 0}
-- Class: 128
-  Script: {instanceID: 0}
-- Class: 213
   Script: {instanceID: 0}
 - Class: 222
   Script: {instanceID: 0}
@@ -73,5 +41,4 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/AllAssets/Prefab/DontDestroy/DontDestroy.prefab
-Dependencies:
-- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/spritepackage/common/btn_01.unity3d
+Dependencies: []

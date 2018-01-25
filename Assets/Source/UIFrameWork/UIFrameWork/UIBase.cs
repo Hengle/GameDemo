@@ -44,7 +44,6 @@ namespace UIFrameWork
 
             GetView();
             State |= UIPanelState.InitialUI;
-            OnPlayOpenUIAudio();
 
             if (isRootPanel)
             {
@@ -124,18 +123,7 @@ namespace UIFrameWork
 
         protected virtual void OnRelease()
         {
-            this.OnPlayCloseUIAudio();
-            GameObject.Destroy(gameObject);
-        }
-
-        protected virtual void OnPlayOpenUIAudio()
-        {
-
-        }
-
-        protected virtual void OnPlayCloseUIAudio()
-        {
-
+            Destroy(gameObject);
         }
 
         public virtual void InitComplete()

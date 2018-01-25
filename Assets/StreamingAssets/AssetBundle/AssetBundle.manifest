@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2847114321
+CRC: 1103116584
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -133,8 +133,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_43:
       Name: allassets/prefab/dontdestroy/dontdestroy.unity3d
-      Dependencies:
-        Dependency_0: allassets/spritepackage/common/btn_01.unity3d
+      Dependencies: {}
     Info_44:
       Name: allassets/resourceart/material/uguigray.unity3d
       Dependencies: {}
