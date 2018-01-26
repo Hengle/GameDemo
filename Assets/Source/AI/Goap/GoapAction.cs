@@ -9,17 +9,14 @@ namespace Goap
         protected GoapStatus preconditionsStatus; // 前置条件
         protected GoapStatus effectsStatus;       // 执行效果
 
-        protected GoapGoal goapGoal;
-
         protected float cost = 1;
 
         protected Action<GoapAction> finisCallBack;
         protected Action<GoapAction> failCallBack;
 
-        public GoapAction(GoapGoal goapGoal)
+        public GoapAction()
         {
             InitStatus();
-            this.goapGoal = goapGoal;
         }
 
         public virtual void InitStatus()
@@ -59,8 +56,7 @@ namespace Goap
 
         protected virtual bool IsInRange()
         {
-            float distance = Vector3.Distance(goapGoal.target.transform.position, goapGoal.transform.position);
-            return distance < 1;
+            return true;
         }
 
         protected void Finish()

@@ -4,10 +4,9 @@ namespace Goap
 {
     public class GoapAgent : MonoBehaviour
     {
-        private GoapGoal goapGoal;
         private GoapPlanManager goapPlanManager;
-
-        private GoapAction currentGoapAction = null;
+        private GoapActionManager goapActionManager;
+        protected GoapStateManager goapStateManager;
 
         // Use this for initialization
         protected virtual void Start()
@@ -21,51 +20,31 @@ namespace Goap
             Controller();
         }
 
-        private void Init()
+        protected virtual void Init()
         {
-            goapGoal = GetComponent<GoapGoal>();
-            goapPlanManager = new GoapPlanManager(goapGoal);
-        }
-        
-        private void Controller()
-        {
-            if (currentGoapAction != null)
-            {
-                currentGoapAction.Run();
-            }
-            else
-            {
-                ChangeAction();
-            }
+            goapPlanManager = new GoapPlanManager( this);
+            goapActionManager = new GoapActionManager(this);
         }
 
-        private void ActionFinishCallBack(GoapAction goapAction)
+        protected virtual void Controller()
         {
-            EndAction(goapAction);
+            goapActionManager.OnFrame();
+            goapStateManager.OnFrame();
         }
 
-        private void ActionFailCallBack(GoapAction goapAction)
-        {
-            EndAction(goapAction);
-        }
+        /// <summary>
+        /// 行为管理器
+        /// </summary>
+        public GoapPlanManager GoapPlanManager { get { return goapPlanManager; } }
 
-        private void EndAction(GoapAction goapAction)
-        {
-            if (currentGoapAction != goapAction)
-            {
-                return;
-            }
+        /// <summary>
+        /// 行为管理器
+        /// </summary>
+        public GoapActionManager GoapActionManager { get { return goapActionManager; } }
 
-            ChangeAction();
-        }
-
-        private void ChangeAction()
-        {
-            currentGoapAction = goapPlanManager.GetPerformerAction();
-            if (currentGoapAction != null)
-            {
-                currentGoapAction.SetCallBack(ActionFinishCallBack, ActionFailCallBack);
-            }
-        }
+        /// <summary>
+        /// 目标、状态 管理器
+        /// </summary>
+        public GoapStateManager GoapStateManager { get { return goapStateManager; } }
     }
 }

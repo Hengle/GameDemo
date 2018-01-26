@@ -4,13 +4,13 @@ using UnityEngine;
 
 public static class UnitManager {
 
-    private static List<Monster> monsterList = new List<Monster>();
+    private static List<MonsterAgent> monsterList = new List<MonsterAgent>();
 
-    public static void AddMonster(Monster monster)
+    public static void AddMonster(MonsterAgent monsterAgent)
     {
-        monsterList.Add(monster);
+        monsterList.Add(monsterAgent);
     }
 
-    public static List<Monster> MonsterList { get { return monsterList; } }
+    public static List<MonsterAgent> MonsterList { get { return monsterList; } }
 
 }

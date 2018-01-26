@@ -3,7 +3,7 @@ using Goap;
 
 public class GoapActionAttack : GoapAction {
 
-	public GoapActionAttack(GoapGoal goapGoal):base(goapGoal)
+	public GoapActionAttack()
     {
         cost = 5;
     }
@@ -28,11 +28,11 @@ public class GoapActionAttack : GoapAction {
     {
         base.Run();
 
-        if (goapGoal.target == null)
-        {
-            Fail();
-            return;
-        }
+        //if (goapGoal.target == null)
+        //{
+        //    Fail();
+        //    return;
+        //}
 
         //if (goapGoal.GetType() == typeof(Person))
         //{

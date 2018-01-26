@@ -2,34 +2,30 @@
 using Goap;
 
 public class GoapPlanManager {
-
-    private GoapGoal goapGoal;
+    private GoapAgent goapAgent;
     private GoapPlan goapPlan;
 
-    private List<GoapAction> usableGoapActionList = new List<GoapAction>();
-
-    private Queue<GoapAction> goapActionQueue = new Queue<GoapAction>();
-
-    public GoapPlanManager(GoapGoal goapGoal)
+    public GoapPlanManager(GoapAgent goapAgent)
     {
-        this.goapGoal = goapGoal;
+        this.goapAgent = goapAgent;
         Init();
     }
 
     private void Init()
     {
         goapPlan = new GoapPlan();
-        usableGoapActionList = goapGoal.GetActions();
     }
 
     public GoapAction GetPerformerAction()
     {
+        Queue<GoapAction> goapActionQueue = new Queue<GoapAction>();
         GoapAction goapAction = null;
         if (goapActionQueue.Count <= 0)
         {
-            GoapStatus worldStatus = goapGoal.GetWorldStatus();
-            GoapStatus goalStatus = goapGoal.GetGoalStatus();
+            GoapStatus worldStatus = goapAgent.GoapStateManager.GetWorldStatus();
+            GoapStatus goalStatus = goapAgent.GoapStateManager.GetGoalStatus();
 
+            List<GoapAction> usableGoapActionList = goapAgent.GoapActionManager.GetActions();
             goapActionQueue = goapPlan.Plan(usableGoapActionList, worldStatus, goalStatus);
         }
 

@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Goap;
 
 public class UnitCreate
 {
@@ -32,9 +31,9 @@ public class UnitCreate
         go.transform.position = new Vector3(position.x, 0, position.z);
         go.name = unitName;
 
-        Monster monster = go.GetComponent<Monster>();
-        monster.Camp = camp;
+        MonsterAgent monsterAgent = go.GetComponent<MonsterAgent>();
+        monsterAgent.Camp = camp;
 
-        UnitManager.AddMonster(monster);
+        UnitManager.AddMonster(monsterAgent);
     }
 }

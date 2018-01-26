@@ -3,7 +3,7 @@ using Goap;
 
 public class GoapActionMove : GoapAction {
 
-	public GoapActionMove(GoapGoal goapGoal):base(goapGoal)
+	public GoapActionMove()
     {
         cost = 1;
     }
@@ -20,7 +20,8 @@ public class GoapActionMove : GoapAction {
 
     public override bool CheckProceduralPrecondition()
     {
-        return goapGoal.target != null && !IsInRange();
+        //return goapGoal.target != null && !IsInRange();
+        return true;
     }
 
     public override void Run()
@@ -33,17 +34,18 @@ public class GoapActionMove : GoapAction {
             return;
         }
 
-        if (goapGoal.target == null)
-        {
-            Fail();
-        }
 
-        MoveController.instance.Move(goapGoal.transform, goapGoal.target.transform.position, 1);
+        //if (goapGoal.target == null)
+        //{
+        //    Fail();
+        //}
+
+        //MoveController.instance.Move(goapGoal.transform, goapGoal.target.transform.position, 1);
     }
 
     protected override bool IsInRange()
     {
-        float distance = Vector3.Distance(goapGoal.transform.position, goapGoal.target.transform.position);
+        float distance = 0;// Vector3.Distance(goapGoal.transform.position, goapGoal.target.transform.position);
         return distance <= 3;
     }
 }
