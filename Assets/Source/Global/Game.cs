@@ -15,7 +15,7 @@ public class Game : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         OnFrame();
-	}
+    }
 
     private void Init()
     {
@@ -26,6 +26,5 @@ public class Game : MonoBehaviour {
     private void OnFrame()
     {
         AssetBundleManager.Instance.OnFrame();
-        //DebugTest();
     }
 }

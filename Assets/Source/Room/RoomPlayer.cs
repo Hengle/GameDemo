@@ -26,9 +26,9 @@ public class RoomPlayer
         GetCamping();
 
         time += Time.deltaTime;
-        if (time > 5)
+        if (time > 1)
         {
-            time = 0;
+            time = -10000;
             CreateUnit();
         }
     }
@@ -44,19 +44,10 @@ public class RoomPlayer
 
         int value = UnityEngine.Random.Range(0, npcDataList.Count);
         NpcData npcData = npcDataList[value];
-        Debug.LogError(value + "   " + npcData.prefab);
-        AssetPool.Instance.Npc.LoadAsset<GameObject>(npcData.prefab, LoadCallBack, new object[] { }, true);
-    }
+        string extend = Enum.GetName(typeof(Camp), camp);
+        string prefab = string.Format("{0}_{1}", npcData.prefab, extend);
 
-    private void LoadCallBack(HandlerParam p_handleParam)
-    {
-        if (p_handleParam.assetObj == null)
-        {
-            return;
-        }
-
-        GameObject go = GameObject.Instantiate(p_handleParam.assetObj) as GameObject;
-        go.transform.position = camping.position;
+        UnitCreate.Instance.Create(prefab, Camp, camping.position);
     }
 
     private void GetCamping()

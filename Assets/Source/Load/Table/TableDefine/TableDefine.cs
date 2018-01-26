@@ -12,6 +12,11 @@ public enum TableType
     Language,
 
     /// <summary>
+    /// 技能表
+    /// </summary>
+    Skill,
+
+    /// <summary>
     /// Npc 表
     /// </summary>
     Npc,
@@ -22,8 +27,8 @@ public enum TableType
 public class TableDefine
 {
     private readonly static string language        = "Language";
+    private readonly static string skill           = "Skill";
     private readonly static string npc             = "Npc";
-    
 
     private static Dictionary<string, object> ObjectDic = new Dictionary<string, object>();
 
@@ -33,6 +38,9 @@ public class TableDefine
         ObjectDic.Clear();
         ObjectDic[language]                         = new LanguageData();
         TableTypeDic[TableType.Language]            = language;
+
+        ObjectDic[skill]                            = new SkillData();
+        TableTypeDic[TableType.Skill]               = skill;
 
         ObjectDic[npc]                              = new NpcData();
         TableTypeDic[TableType.Npc]                 = npc;

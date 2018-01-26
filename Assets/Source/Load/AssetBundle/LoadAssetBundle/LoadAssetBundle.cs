@@ -23,10 +23,7 @@ public class LoadAssetBundle
     private HashSet<string> loadingUrl = new HashSet<string>();
     private void AddLoading(string key)
     {
-        if (!loadingUrl.Contains(key))
-        {
-            loadingUrl.Add(key);
-        }
+        loadingUrl.Add(key);
     }
 
     private void DelLoading(string key)
@@ -48,10 +45,17 @@ public class LoadAssetBundle
     /// <param name="url"></param>
     /// <param name="abCallBack"></param>
     /// <returns></returns>
-    private IEnumerator LoadAB(string url, LoadABCallBack loadABCallBack)
+    private IEnumerator LoadAB(string url, LoadABCallBack loadABCallBack, bool isDepends = false)
     {
+        if (isDepends && IsLoading(url))
+        {
+            yield break;
+        }
+
         WWW www = new WWW(url);
         yield return www;
+
+        DelLoading(url);
 
         if (!string.IsNullOrEmpty(www.error))
         {
@@ -122,10 +126,12 @@ public class LoadAssetBundle
             AssetBundleManager.Instance.SetDepends(assetBundleName, depends);
         }
 
+        List<string> urlList = new List<string>();
         for (int i = 0; i < count; ++i)
         {
             string url = ResourcePathManager.Instance.CheckFilePath(ResourcePathManager.Instance.GetPersistentDataPath, "AssetBundle/" + depends[i]);
             url = url.ToLower();
+
             AssetBundleData assetBundleData = AssetBundleManager.Instance.GetAssetBundleData(url);
             // 获取到的数据不为空就不再重新加载了
             if (assetBundleData != null)
@@ -133,12 +139,27 @@ public class LoadAssetBundle
                 continue;
             }
 
-            yield return Game.Instance.StartCoroutine(LoadAB(url, null));
+            Game.Instance.StartCoroutine(LoadAB(url, null, true));
+
+            urlList.Add(url);
+            AddLoading(url);
+        }
+
+        int index = 0;
+        while(urlList.Count > 0)
+        {
+            index %= urlList.Count;
+            if (!IsLoading(urlList[index]))
+            {
+                urlList.RemoveAt(index);
+            }
+
+            ++index;
+            yield return new WaitForEndOfFrame();
         }
 
         LoadABCallBack CallBack = delegate (AssetBundleData assetBundleData)
         {
-            DelLoading(assetPath);
             loadABCallBack(assetBundleData);
         };
 

@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 2037496572
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1a3076c650977fcb4f8362c67d70ddaa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3c82093c04beb3cbe2671da5dc235a52
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f48da666be0227341be6d71a0cf91401, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ea0a2779098b5064d8f26afbe3ab37ac, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/AllAssets/Prefab/NPC/Belle_Red.prefab
+Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zj_003_biaozhunnv_01.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@idle.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@run.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@death.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@damage.unity3d

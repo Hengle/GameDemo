@@ -46,4 +46,5 @@ public class FirstRun : MonoBehaviour {
 
         OnLoadedGlobalPrefabs();
     }
+
 }
