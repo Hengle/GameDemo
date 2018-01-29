@@ -9,14 +9,17 @@ namespace Goap
         protected GoapStatus preconditionsStatus; // 前置条件
         protected GoapStatus effectsStatus;       // 执行效果
 
+        protected GoapAgent goapAgent = null;
         protected float cost = 1;
 
-        protected Action<GoapAction> finisCallBack;
-        protected Action<GoapAction> failCallBack;
+        private GoapActionManager goapActionManager;
+        protected StateEnum stateEnum;
 
-        public GoapAction()
+        public GoapAction(GoapAgent goapAgent, GoapActionManager goapActionManager)
         {
             InitStatus();
+            this.goapAgent = goapAgent;
+            this.goapActionManager = goapActionManager;
         }
 
         public virtual void InitStatus()
@@ -39,7 +42,7 @@ namespace Goap
                 return;
             }
             time = 0;
-            Debug.LogError("Run : " + this.GetType().ToString());
+            //Debug.LogError("Run : " + this.GetType().ToString());
         }
 
         public GoapStatus GetPreconditions()
@@ -54,35 +57,23 @@ namespace Goap
 
         public float Cost { get { return cost; } }
 
-        protected virtual bool IsInRange()
+        public virtual void Enter()
         {
-            return true;
+            //Debug.LogError("Enter : " + this.GetType().ToString());
+            StateBase stateBase = goapAgent.StateMachine.ChangeState(stateEnum);
+            stateBase.SetAction(this);
         }
 
-        protected void Finish()
+        public virtual void Finish()
         {
-            Debug.LogError("Finish : " + this.GetType().ToString());
-            if (finisCallBack != null)
-            {
-                finisCallBack(this);
-            }
+            //Debug.LogError("Finish : " + this.GetType().ToString());
+            goapActionManager.ActionFinishCallBack(this);
         }
 
-        protected void Fail()
+        public virtual void Fail()
         {
-            Debug.LogError("Fail : " + this.GetType().ToString());
-
-            if (failCallBack != null)
-            {
-                failCallBack(this);
-            }
-        }
-
-        public void SetCallBack(Action<GoapAction> finssCallBack, Action<GoapAction> failCallBack)
-        {
-            Debug.LogError("Enter : " + this.GetType().ToString());
-            this.finisCallBack = finssCallBack;
-            this.failCallBack = failCallBack;
+            //Debug.LogError("Fail : " + this.GetType().ToString());
+            goapActionManager.ActionFailCallBack(this);
         }
     }
 }

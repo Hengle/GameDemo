@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using Goap;
 
+/// <summary>
+/// 攻击行为
+/// </summary>
 public class GoapActionAttack : GoapAction {
 
-	public GoapActionAttack()
+	public GoapActionAttack(GoapAgent goapAgent, GoapActionManager goapActionManager) : base(goapAgent, goapActionManager)
     {
         cost = 5;
+        stateEnum = StateEnum.Attack;
     }
 
     public override void InitStatus()
@@ -22,6 +26,11 @@ public class GoapActionAttack : GoapAction {
     public override bool CheckProceduralPrecondition()
     {
         return true;
+    }
+
+    public override void Enter()
+    {
+        base.Enter();
     }
 
     public override void Run()

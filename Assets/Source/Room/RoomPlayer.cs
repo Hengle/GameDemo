@@ -47,7 +47,7 @@ public class RoomPlayer
         string extend = Enum.GetName(typeof(Camp), camp);
         string prefab = string.Format("{0}_{1}", npcData.prefab, extend);
 
-        UnitCreate.Instance.Create(prefab, Camp, camping.position);
+        UnitCreate.Instance.Create(prefab, npcData.id, Camp, camping.position);
     }
 
     private void GetCamping()

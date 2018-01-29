@@ -10,11 +10,15 @@ public class GoapActionManager : IAction
     public GoapActionManager(GoapAgent goapAgent)
     {
         this.goapAgent = goapAgent;
-        GoapActionAttack goapActionAttack = new GoapActionAttack();
-        SetActions(goapActionAttack);
 
-        GoapActionMove goapActionMove = new GoapActionMove();
+        GoapActionIdle goapActionIdle = new GoapActionIdle(this.goapAgent, this);
+        SetActions(goapActionIdle);
+
+        GoapActionMove goapActionMove = new GoapActionMove(this.goapAgent, this);
         SetActions(goapActionMove);
+
+        GoapActionAttack goapActionAttack = new GoapActionAttack(this.goapAgent, this);
+        SetActions(goapActionAttack);
     }
 
     public void SetActions(GoapAction goapAction)
@@ -39,12 +43,12 @@ public class GoapActionManager : IAction
         }
     }
 
-    private void ActionFinishCallBack(GoapAction goapAction)
+    public void ActionFinishCallBack(GoapAction goapAction)
     {
         EndAction(goapAction);
     }
 
-    private void ActionFailCallBack(GoapAction goapAction)
+    public void ActionFailCallBack(GoapAction goapAction)
     {
         EndAction(goapAction);
     }
@@ -56,6 +60,7 @@ public class GoapActionManager : IAction
             return;
         }
 
+        currentGoapAction = null;
         ChangeAction();
     }
 
@@ -64,7 +69,7 @@ public class GoapActionManager : IAction
         currentGoapAction = goapAgent.GoapPlanManager.GetPerformerAction();
         if (currentGoapAction != null)
         {
-            currentGoapAction.SetCallBack(ActionFinishCallBack, ActionFailCallBack);
+            currentGoapAction.Enter();
         }
     }
 }

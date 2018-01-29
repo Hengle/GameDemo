@@ -27,5 +27,10 @@
     /// </summary>
     attackEnemy = 10001,
 
+    /// <summary>
+    /// 休闲
+    /// </summary>
+    idle        = 10002,
+
     #endregion
 }

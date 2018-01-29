@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 637667348
+CRC: 3351754373
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 82e051bc379df297c52bd14b46411c81
+    Hash: 3f91fa4de9503cf1d52be6afeadfe50b
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d4b13d34a0a3b810ce51f89dea973fd0
+    Hash: b95b17aee435ed285def4505bfd2025e
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -15,9 +15,17 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
 - Class: 43
   Script: {instanceID: 0}
 - Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
   Script: {instanceID: 0}
 - Class: 111
   Script: {instanceID: 0}
@@ -30,10 +38,14 @@ ClassTypes:
 Assets:
 - Assets/AllAssets/Prefab/NPC/Belle_Blue.prefab
 Dependencies:
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zhang_001_001.unity3d
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@idle.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zhang_001_01.unity3d
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01.unity3d
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@run.unity3d
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack1.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack2.unity3d
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@death.unity3d
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@damage.unity3d
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zj_003_biaozhunnv_02.unity3d

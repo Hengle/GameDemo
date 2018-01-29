@@ -6,17 +6,8 @@ public enum EventHandlerID
 {
     None              = 10000,
 
-    LoginResponse     = 10002,  // 登录附带消息
-    SelectCreateBuild = 10003,  // 选择新建建筑
-    TimeFrame         = 10004,  // 时间帧率
-    QueueChange       = 10005,  // 队列变化
-    ResourceChange    = 10006,  // 资源变化
-    UserProfileChange = 10007,  // 角色信息变化
-    UserItemChange    = 10008,  // 道具数据变化
-    BuildChange       = 10009,  // 建筑变化
-    ResourceCollect   = 10010,  // 收资源
 
-    ShowLogin         = 11001,  // 登录面板
+    ShowLogin         = 10001, // 登录界面
 
 }
 
@@ -113,4 +104,3 @@ public class EventManage {
         m_dicHandler[_type](_type, _data);
     }
 }
-

@@ -1,16 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
+using Goap;
 
 public static class UnitManager {
 
-    private static List<MonsterAgent> monsterList = new List<MonsterAgent>();
+    private static List<GoapAgent> monsterList = new List<GoapAgent>();
 
-    public static void AddMonster(MonsterAgent monsterAgent)
+    public static void AddMonster(GoapAgent goapAgent)
     {
-        monsterList.Add(monsterAgent);
+        monsterList.Add(goapAgent);
     }
 
-    public static List<MonsterAgent> MonsterList { get { return monsterList; } }
+    public static List<GoapAgent> MonsterList { get { return monsterList; } }
 
 }

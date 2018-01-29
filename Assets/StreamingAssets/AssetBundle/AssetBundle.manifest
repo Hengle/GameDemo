@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 76225619
+CRC: 1853634677
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -365,23 +365,31 @@ AssetBundleManifest:
     Info_109:
       Name: allassets/prefab/npc/belle_red.unity3d
       Dependencies:
-        Dependency_0: allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zj_003_biaozhunnv_01.unity3d
-        Dependency_1: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@idle.unity3d
-        Dependency_2: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01.unity3d
-        Dependency_3: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@run.unity3d
-        Dependency_4: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack.unity3d
-        Dependency_5: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@death.unity3d
-        Dependency_6: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@damage.unity3d
+        Dependency_0: allassets/resourceart/model/zj_003_biaozhunnv_02/zhang_001_001.unity3d
+        Dependency_1: allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zj_003_biaozhunnv_01.unity3d
+        Dependency_2: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@idle.unity3d
+        Dependency_3: allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zhang_001_01.unity3d
+        Dependency_4: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01.unity3d
+        Dependency_5: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@run.unity3d
+        Dependency_6: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack.unity3d
+        Dependency_7: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack1.unity3d
+        Dependency_8: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack2.unity3d
+        Dependency_9: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@death.unity3d
+        Dependency_10: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@damage.unity3d
     Info_110:
       Name: allassets/prefab/npc/belle_blue.unity3d
       Dependencies:
-        Dependency_0: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@idle.unity3d
-        Dependency_1: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01.unity3d
-        Dependency_2: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@run.unity3d
-        Dependency_3: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack.unity3d
-        Dependency_4: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@death.unity3d
-        Dependency_5: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@damage.unity3d
-        Dependency_6: allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zj_003_biaozhunnv_02.unity3d
+        Dependency_0: allassets/resourceart/model/zj_003_biaozhunnv_02/zhang_001_001.unity3d
+        Dependency_1: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@idle.unity3d
+        Dependency_2: allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zhang_001_01.unity3d
+        Dependency_3: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01.unity3d
+        Dependency_4: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@run.unity3d
+        Dependency_5: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack.unity3d
+        Dependency_6: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack1.unity3d
+        Dependency_7: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@attack2.unity3d
+        Dependency_8: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@death.unity3d
+        Dependency_9: allassets/resourceart/model/zj_003_biaozhunnv_02/zj_003_biaozhunnv_01@damage.unity3d
+        Dependency_10: allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zj_003_biaozhunnv_02.unity3d
     Info_111:
       Name: allassets/resourceart/model/zj_003_biaozhunnv_02/materials/zj_003_biaozhunnv_02.unity3d
       Dependencies:
@@ -399,6 +407,8 @@ AssetBundleManifest:
         Dependency_7: allassets/resourceart/model/cha_knight/motions/mot_knight@idle.unity3d
         Dependency_8: allassets/resourceart/model/cha_knight/motions/mot_knight@run.unity3d
         Dependency_9: allassets/resourceart/model/cha_knight/motions/mot_knight@death.unity3d
+        Dependency_10: allassets/resourceart/model/cha_knight/motions/mot_knight@attack1.unity3d
+        Dependency_11: allassets/resourceart/model/cha_knight/motions/mot_knight@attack2.unity3d
     Info_113:
       Name: allassets/prefab/npc/knight_red.unity3d
       Dependencies:
@@ -412,6 +422,8 @@ AssetBundleManifest:
         Dependency_7: allassets/resourceart/model/cha_knight/motions/mot_knight@idle.unity3d
         Dependency_8: allassets/resourceart/model/cha_knight/motions/mot_knight@run.unity3d
         Dependency_9: allassets/resourceart/model/cha_knight/motions/mot_knight@death.unity3d
+        Dependency_10: allassets/resourceart/model/cha_knight/motions/mot_knight@attack1.unity3d
+        Dependency_11: allassets/resourceart/model/cha_knight/motions/mot_knight@attack2.unity3d
     Info_114:
       Name: allassets/resourceart/model/cha_knight/models/materials/blue.unity3d
       Dependencies: {}
@@ -428,6 +440,8 @@ AssetBundleManifest:
         Dependency_4: allassets/resourceart/model/cha_slime/motions/mot_slime@idle.unity3d
         Dependency_5: allassets/resourceart/model/cha_slime/motions/mot_slime@run.unity3d
         Dependency_6: allassets/resourceart/model/cha_slime/motions/mot_slime@death.unity3d
+        Dependency_7: allassets/resourceart/model/cha_knight/motions/mot_knight@attack1.unity3d
+        Dependency_8: allassets/resourceart/model/cha_knight/motions/mot_knight@attack2.unity3d
     Info_117:
       Name: allassets/prefab/npc/slime_red.unity3d
       Dependencies:
@@ -438,6 +452,14 @@ AssetBundleManifest:
         Dependency_4: allassets/resourceart/model/cha_slime/motions/mot_slime@idle.unity3d
         Dependency_5: allassets/resourceart/model/cha_slime/motions/mot_slime@run.unity3d
         Dependency_6: allassets/resourceart/model/cha_slime/motions/mot_slime@death.unity3d
+        Dependency_7: allassets/resourceart/model/cha_knight/motions/mot_knight@attack1.unity3d
+        Dependency_8: allassets/resourceart/model/cha_knight/motions/mot_knight@attack2.unity3d
     Info_118:
       Name: allassets/table/skill.unity3d
+      Dependencies: {}
+    Info_119:
+      Name: allassets/resourceart/model/cha_knight/motions/mot_knight@attack1.unity3d
+      Dependencies: {}
+    Info_120:
+      Name: allassets/resourceart/model/cha_knight/motions/mot_knight@attack2.unity3d
       Dependencies: {}

@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using Goap;
 
+/// <summary>
+/// 移动行为
+/// </summary>
 public class GoapActionMove : GoapAction {
 
-	public GoapActionMove()
+	public GoapActionMove(GoapAgent goapAgent, GoapActionManager goapActionManager) : base(goapAgent, goapActionManager)
     {
         cost = 1;
+        stateEnum = StateEnum.Run;
     }
 
     public override void InitStatus()
@@ -24,16 +28,14 @@ public class GoapActionMove : GoapAction {
         return true;
     }
 
+    public override void Enter()
+    {
+        base.Enter();
+    }
+
     public override void Run()
     {
         base.Run();
-
-        if (IsInRange())
-        {
-            Finish();
-            return;
-        }
-
 
         //if (goapGoal.target == null)
         //{
@@ -41,11 +43,5 @@ public class GoapActionMove : GoapAction {
         //}
 
         //MoveController.instance.Move(goapGoal.transform, goapGoal.target.transform.position, 1);
-    }
-
-    protected override bool IsInRange()
-    {
-        float distance = 0;// Vector3.Distance(goapGoal.transform.position, goapGoal.target.transform.position);
-        return distance <= 3;
     }
 }

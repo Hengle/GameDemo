@@ -5,17 +5,20 @@ using Goap;
 
 public class GoapStateManager : IGoal, IStatus
 {
-    private MonsterAgent monsterAgent;
+    private GoapAgent goapAgent;
 
     private GoapStatus worldStats = new GoapStatus();  // 外部环境状态
     private GoapStatus goalStatus = new GoapStatus();  // 要完成的目标
     
-    public GoapStateManager(MonsterAgent monsterAgent)
+    public GoapStateManager(GoapAgent goapAgent)
     {
-        this.monsterAgent = monsterAgent;
+        this.goapAgent = goapAgent;
 
         SetGoal(GoapCondition.attackEnemy, true);
         SetGoal(GoapCondition.inAttackRange, true);
+        SetGoal(GoapCondition.idle, true);
+
+        UpdateStatus();
     }
 
     public void OnFrame()
@@ -44,9 +47,9 @@ public class GoapStateManager : IGoal, IStatus
 
     public void UpdateStatus()
     {
-        worldStats.AddState(GoapCondition.hasEnemy, monsterAgent.HasTarget);
-        worldStats.AddState(GoapCondition.inAttackRange, monsterAgent.InAttackRange());
-        worldStats.AddState(GoapCondition.hasUsableSkill, false);
+        worldStats.AddState(GoapCondition.hasEnemy, goapAgent.HasTarget);
+        worldStats.AddState(GoapCondition.inAttackRange, goapAgent.InAttackRange());
+        worldStats.AddState(GoapCondition.hasUsableSkill, goapAgent.UseableSkill() != null);
     }
 
     public GoapStatus GetWorldStatus()

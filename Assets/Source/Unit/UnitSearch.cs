@@ -1,16 +1,16 @@
-﻿using UnityEngine;
+﻿using Goap;
 using System.Collections.Generic;
 
 public class UnitSearch  {
     public static readonly UnitSearch Instance = new UnitSearch();
 
-	public MonsterAgent Search(Camp selfCamp, CampRelations campRelations)
+	public GoapAgent Search(Camp selfCamp, CampRelations campRelations)
     {
-        List<MonsterAgent> monsterList = UnitManager.MonsterList;
+        List<GoapAgent> monsterList = UnitManager.MonsterList;
 
         for (int i = monsterList.Count - 1; i >= 0; --i)
         {
-            MonsterAgent monsterAgent = monsterList[i];
+            GoapAgent monsterAgent = monsterList[i];
             if (!monsterAgent.IsValid())
             {
                 monsterList.RemoveAt(i);

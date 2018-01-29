@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 718494663
+CRC: 3627503029
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bfac4019f3217e4232dacad185d31637
+    Hash: fd492dc8bb150de05b4af47f90e01acf
   TypeTreeHash:
     serializedVersion: 2
     Hash: d4b13d34a0a3b810ce51f89dea973fd0
@@ -37,3 +37,5 @@ Dependencies:
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/cha_slime/motions/mot_slime@idle.unity3d
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/cha_slime/motions/mot_slime@run.unity3d
 - G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/cha_slime/motions/mot_slime@death.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/cha_knight/motions/mot_knight@attack1.unity3d
+- G:/MyProject/GameDemo/Assets/StreamingAssets/AssetBundle/allassets/resourceart/model/cha_knight/motions/mot_knight@attack2.unity3d
