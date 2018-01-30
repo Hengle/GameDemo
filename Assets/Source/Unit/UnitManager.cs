@@ -10,6 +10,11 @@ public static class UnitManager {
         monsterList.Add(goapAgent);
     }
 
+    public static void RemoveMonster(GoapAgent goapAgent)
+    {
+        monsterList.Remove(goapAgent);
+    }
+
     public static List<GoapAgent> MonsterList { get { return monsterList; } }
 
 }

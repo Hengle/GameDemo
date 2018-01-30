@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6b4da157919bf8d4da85110b4aba51c3
+guid: eb7e12e8c760429489bb0135db5098c0
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -148,8 +148,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Attack3
       takeName: Take 001
-      firstFrame: 428
-      lastFrame: 489
+      firstFrame: 319
+      lastFrame: 346
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -174,49 +174,21 @@ ModelImporter:
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
-        intParameter: 40
+        intParameter: 21
         messageOptions: 0
-      - time: 0.33169124
+      - time: 0.996716
+        functionName: AnimEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 21
+        messageOptions: 0
+      - time: 0.33169147
         functionName: AE_Show
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 1
-        messageOptions: 0
-      - time: 0.39810097
-        functionName: AE_Hit
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 2
-        messageOptions: 0
-      - time: 0.5086487
-        functionName: AE_Hit
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 2
-        messageOptions: 0
-      - time: 0.6146904
-        functionName: AE_Hit
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 2
-        messageOptions: 0
-      - time: 0.75406694
-        functionName: AE_Hit
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 2
-        messageOptions: 0
-      - time: 1
-        functionName: AnimEnd
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 40
         messageOptions: 0
       transformMask:
       - path: 

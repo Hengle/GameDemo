@@ -29,7 +29,7 @@ public class UnitCreate
         Vector3 position = (Vector3)paramArr[3];
 
         GameObject go = GameObject.Instantiate(p_handleParam.assetObj) as GameObject;
-        go.transform.position = new Vector3(position.x, 0, position.z);
+        go.transform.position = position;
         go.name = unitName;
 
         GoapAgent goapAgent = go.GetComponent<GoapAgent>();

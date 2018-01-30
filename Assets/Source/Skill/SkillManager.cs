@@ -18,7 +18,7 @@ public class SkillManager {
         NpcData npcData = goapAgent.NpcData;
         //int[] skills = new int[]{ npcData.skillID, npcData.skillID1, npcData.skillID2};
 
-        int[] skills = new int[] { npcData.skillID, npcData.skillID, npcData.skillID, };
+        int[] skills = new int[] { npcData.skillID, npcData.skillID1, npcData.skillID2, };
 
         skillList.Clear();
         for (int i = 0; i < skills.Length; ++i)

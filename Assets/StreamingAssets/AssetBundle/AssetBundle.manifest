@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1237560930
+CRC: 2949942635
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -462,4 +462,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_120:
       Name: allassets/resourceart/model/cha_knight/motions/mot_knight@attack2.unity3d
+      Dependencies: {}
+    Info_121:
+      Name: allassets/prefab/ui/hpcontrollerpanel.unity3d
       Dependencies: {}

@@ -38,6 +38,8 @@ public class SceneBattle : SceneBase
             return;
         }
         m_isFirstLogin = false;
+
+        UIManage.Instance.OpenUI((int)EnumUIType.HpControllerPanel, "HpControllerPanel", null);
     }
 
     private void CreateRoom()

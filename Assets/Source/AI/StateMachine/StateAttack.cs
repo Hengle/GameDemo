@@ -15,10 +15,8 @@ public class StateAttack : StateBase {
         skill = goapAgent.UseableSkill();
 
         base.OnEnter();
-        float animationLength = goapAgent.AnimationManager.GetAnimationLength(stateAnimationDic[stateEnum]);
+        float animationLength = goapAgent.AnimationManager.GetAnimationLength(GetAnimationName());
         endTime = Time.realtimeSinceStartup + animationLength;
-
-        Debug.LogError("AnimName :" + stateAnimationDic[stateEnum] + "    " + animationLength);
 
         skill.Reset();
         goapAgent.AttackUseSkill = skill;
@@ -38,6 +36,8 @@ public class StateAttack : StateBase {
         {
             goapAction.Finish();
         }
+
+        DamagerController.Damage(goapAgent, goapAgent.Target, skill.SkillData.id);
     }
 
     public override void OnExit()

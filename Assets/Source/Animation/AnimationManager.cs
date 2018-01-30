@@ -29,7 +29,6 @@ public class AnimationManager  {
             return;
         }
 
-        Debug.LogError("Play :" + animName);
         if (enterQueue)
         {
             QueueMode queueMode = isPlayNow ? QueueMode.PlayNow : QueueMode.CompleteOthers;

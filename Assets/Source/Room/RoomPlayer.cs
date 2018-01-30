@@ -64,7 +64,7 @@ public class RoomPlayer
         }
     }
 
-    private float time = 0;
+    //private float time = 0;
 
     private void CreateUnit()
     {
@@ -90,7 +90,8 @@ public class RoomPlayer
         string extend = Enum.GetName(typeof(Camp), camp);
         string prefab = string.Format("{0}_{1}", npcData.prefab, extend);
 
-        UnitCreate.Instance.Create(prefab, npcData.id, Camp, camping.position);
+        int randomX = UnityEngine.Random.Range(-5, 5);
+        UnitCreate.Instance.Create(prefab, npcData.id, Camp, new Vector3( camping.position.x + randomX, 0, camping.position.z));
     }
 
     private void GetCamping()

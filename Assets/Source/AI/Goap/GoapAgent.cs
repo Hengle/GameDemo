@@ -12,7 +12,7 @@ namespace Goap
         protected SkillManager skillManager;
 
         private GoapAgent target;
-        private float hp = 100;
+        private float hp = 0;
         private int npcId;
         private NpcData npcData = null;
 
@@ -38,10 +38,22 @@ namespace Goap
             animationManager = new AnimationManager(transform);
 
             skillManager = new SkillManager(this);
+
+            if (HpControllerPanel.instance != null)
+            {
+                HpControllerPanel.instance.GetHp(this);
+            }
         }
 
         protected virtual void Controller()
         {
+            if (!IsAlive())
+            {
+                UnitManager.RemoveMonster(this);
+                GameObject.Destroy(gameObject);
+                return;
+            }
+
             goapActionManager.OnFrame();
 
             goapStateManager.OnFrame();
@@ -57,6 +69,7 @@ namespace Goap
             set {
                 npcId = value;
                 npcData = TableTool.GetTableDataRow<NpcData>(TableType.Npc, value);
+                hp = npcData.hp;
             }
         }
 
@@ -102,9 +115,16 @@ namespace Goap
             return distance <= skill.Range();
         }
 
-        public bool IsValid()
+        public bool IsAlive()
         {
             return hp > 0;
+        }
+
+        public float Hp { get { return hp; } }
+
+        public void Damage(float value)
+        {
+            hp -= value;
         }
 
         public void LookTarget()

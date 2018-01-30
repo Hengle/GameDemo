@@ -24,7 +24,7 @@ public class Skill  {
             return;
         }
 
-        Reset();
+        //Reset();
     }
 
     public void Reset()

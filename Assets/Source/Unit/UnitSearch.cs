@@ -11,7 +11,7 @@ public class UnitSearch  {
         for (int i = monsterList.Count - 1; i >= 0; --i)
         {
             GoapAgent monsterAgent = monsterList[i];
-            if (!monsterAgent.IsValid())
+            if (monsterAgent == null || !monsterAgent.IsAlive())
             {
                 monsterList.RemoveAt(i);
                 continue;

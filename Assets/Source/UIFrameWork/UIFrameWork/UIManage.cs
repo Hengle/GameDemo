@@ -14,13 +14,7 @@ namespace UIFrameWork
         None = 0,
         
         LoginControllerPanel                     = 1, // 登录面板
-        CreateBuildControllerPanel               = 2, // 新建建筑界面
-        BuildFunctionPreviewpControllerPanel     = 3, // 建筑功能预览界面
-        BuildUpControllerPanel                   = 4, // 建筑 建造/升级界面
-        QueueBuildControllerPanel                = 5, // 主城内建造队列
-        BuildDetailControllerPanel               = 6, // 建筑详情面板
-        ResourceControllerPanel                  = 7, // 资源面板
-        BuildHeadControllerPanel                 = 8, // 建筑跟随UI面板
+        HpControllerPanel                        = 2, // 血条面板
 
         #endregion
 

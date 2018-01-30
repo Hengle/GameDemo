@@ -59,4 +59,18 @@ public class Room
 
         return null;
     }
+
+    public RoomPlayer GetRoomPlayer(Camp camp)
+    {
+        for (int i = 0; i < roomPlayerList.Count; ++i)
+        {
+            RoomPlayer roomPlayer = roomPlayerList[i];
+            if (roomPlayer.Camp == camp)
+            {
+                return roomPlayer;
+            }
+        }
+
+        return null;
+    }
 }

@@ -15,3 +15,7 @@
 *.lock
 
 *.ide
+
+*.ide-shm
+
+*.ide-wal
