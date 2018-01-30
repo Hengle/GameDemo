@@ -1,3 +1,17 @@
 /Library/
 
 /Temp/
+
+*.csproj
+
+*.user
+
+*.csproj
+
+*.sln
+
+*.suo
+
+*.lock
+
+*.ide
