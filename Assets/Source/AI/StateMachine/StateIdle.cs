@@ -16,9 +16,14 @@ public class StateIdle : StateBase{
     {
         base.OnExecute();
 
-        if (!goapAgent.HasTarget)
+        if (goapAgent != null && !goapAgent.HasTarget)
         {
-            goapAgent.Target = UnitSearch.Instance.Search(goapAgent.Camp, CampRelations.Enemy);
+            Skill skill = goapAgent.UseableSkill();
+            if (skill != null)
+            {
+                SkillData skillData = skill.SkillData;
+                goapAgent.Target = UnitSearch.Instance.Search(goapAgent, (CampRelations)skillData.attackType);
+            }
         }
 
         if (goapAgent.HasTarget)

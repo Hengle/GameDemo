@@ -12,6 +12,7 @@ public class HpControllerPanel : UIBase {
     private Dictionary<string, Transform> hpDic = new Dictionary<string, Transform>();
 
     private Dictionary<string, Queue<Transform>> hpQueueDic = new Dictionary<string, Queue<Transform>>();
+    private int cacheCount = 10;
 
     protected override void Awake()
     {
@@ -57,6 +58,7 @@ public class HpControllerPanel : UIBase {
             newHpGo.name = hpName;
             hpTr = newHpGo.transform;
             ToolsComponent.AddChild(transform, hpTr);
+            hpTr.position = new Vector3(0, 1000, 0);
         }
         else
         {
@@ -75,7 +77,14 @@ public class HpControllerPanel : UIBase {
 
     public void ReleaseHp(Transform hpTr)
     {
-        hpQueueDic[hpTr.name].Enqueue(hpTr);
-        hpTr.gameObject.SetActive(false);
+        if (hpQueueDic[hpTr.name].Count <= cacheCount)
+        {
+            hpQueueDic[hpTr.name].Enqueue(hpTr);
+            hpTr.gameObject.SetActive(false);
+        }
+        else
+        {
+            GameObject.Destroy(hpTr.gameObject);
+        }
     }
 }

@@ -22,6 +22,11 @@ public class Follow : MonoBehaviour {
         this.target = target;
     }
 
+    public void SetPos(Vector3 pos)
+    {
+        rectTransform.anchoredPosition3D = pos;
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -28,6 +28,7 @@ public class Hp : ViewController
 
         if (goapAgent == null || !goapAgent.IsAlive())
         {
+            follow.SetPos(new Vector3(0, 1000, 0));
             HpControllerPanel.instance.ReleaseHp(transform);
         }
     }

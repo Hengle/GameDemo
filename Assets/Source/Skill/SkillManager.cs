@@ -58,8 +58,8 @@ public class SkillManager {
         }
         else
         {
-            int value = Random.Range(0, useList.Count);
-            return useList[value];
+            //int value = Random.Range(0, useList.Count);
+            return useList[0];
         }
     }
 }
