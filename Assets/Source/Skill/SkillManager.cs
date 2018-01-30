@@ -16,7 +16,9 @@ public class SkillManager {
     private void Init()
     {
         NpcData npcData = goapAgent.NpcData;
-        int[] skills = new int[]{ npcData.skillID, npcData.skillID1, npcData.skillID2};
+        //int[] skills = new int[]{ npcData.skillID, npcData.skillID1, npcData.skillID2};
+
+        int[] skills = new int[] { npcData.skillID, npcData.skillID, npcData.skillID, };
 
         skillList.Clear();
         for (int i = 0; i < skills.Length; ++i)
@@ -47,16 +49,17 @@ public class SkillManager {
             }
 
             useList.Add(skill);
-            break;
         }
 
         Skill useSkill = null;
-        if (skillList.Count <= 0)
+        if (useList.Count <= 0)
         {
             return useSkill;
         }
-
-        int value = Random.Range(0, skillList.Count);
-        return skillList[value];
+        else
+        {
+            int value = Random.Range(0, useList.Count);
+            return useList[value];
+        }
     }
 }

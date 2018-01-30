@@ -24,12 +24,14 @@ public class AnimationManager  {
             return;
         }
 
+        if (animation.IsPlaying(animName))
+        {
+            return;
+        }
+
+        Debug.LogError("Play :" + animName);
         if (enterQueue)
         {
-            if (animation.IsPlaying(animName))
-            {
-                return;
-            }
             QueueMode queueMode = isPlayNow ? QueueMode.PlayNow : QueueMode.CompleteOthers;
             animation.CrossFadeQueued(animName, fadeLength, queueMode);
         }

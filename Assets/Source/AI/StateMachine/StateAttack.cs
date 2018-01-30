@@ -14,11 +14,11 @@ public class StateAttack : StateBase {
     {
         skill = goapAgent.UseableSkill();
 
-        Debug.LogError("SkillID :" + skill.SkillData.id + "     " + skill.Index + "    " + goapAgent.name);
-        
         base.OnEnter();
         float animationLength = goapAgent.AnimationManager.GetAnimationLength(stateAnimationDic[stateEnum]);
         endTime = Time.realtimeSinceStartup + animationLength;
+
+        Debug.LogError("AnimName :" + stateAnimationDic[stateEnum] + "    " + animationLength);
 
         skill.Reset();
         goapAgent.AttackUseSkill = skill;
@@ -33,7 +33,7 @@ public class StateAttack : StateBase {
             return;
         }
 
-        endTime = Time.realtimeSinceStartup + 10; // 放置当前还没推出，下一帧又执行
+        ResetTime();
         if (goapAction != null)
         {
             goapAction.Finish();
@@ -43,6 +43,12 @@ public class StateAttack : StateBase {
     public override void OnExit()
     {
         base.OnExit();
+        ResetTime();
+    }
+
+    private void ResetTime()
+    {
+        endTime = Time.realtimeSinceStartup + int.MaxValue; // 放置当前还没推出，下一帧又执行
     }
 
     protected override string GetAnimationName()

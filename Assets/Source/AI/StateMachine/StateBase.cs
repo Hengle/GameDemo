@@ -64,6 +64,6 @@ public class StateBase  {
         string animName = GetAnimationName();
 
         //Debug.LogError("PlayAnimation : " + animName + "     " + goapAgent.name);
-        goapAgent.AnimationManager.CrossFade(animName);
+        goapAgent.AnimationManager.CrossFade(animName, 0, false, true);
     }
 }

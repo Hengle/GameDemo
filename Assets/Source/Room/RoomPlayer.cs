@@ -25,11 +25,42 @@ public class RoomPlayer
     {
         GetCamping();
 
-        time += Time.deltaTime;
-        if (time > 1)
+        //time += Time.deltaTime;
+        //if (time > 1)
+        //{
+        //    time = -10000;
+        //    CreateUnit();
+        //}
+
+        if (camp == Camp.Blue)
         {
-            time = -10000;
-            CreateUnit();
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                CreateUnit(10001);
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                CreateUnit(10010);
+            }
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                CreateUnit(10020);
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                CreateUnit(10001);
+            }
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                CreateUnit(10010);
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                CreateUnit(10020);
+            }
         }
     }
 
@@ -44,6 +75,18 @@ public class RoomPlayer
 
         int value = UnityEngine.Random.Range(0, npcDataList.Count);
         NpcData npcData = npcDataList[value];
+
+        CreateUnit(npcData.id);
+    }
+
+    private void CreateUnit(int npcID)
+    {
+        NpcData npcData = TableTool.GetTableDataRow<NpcData>(TableType.Npc, npcID);
+        if (npcData == null)
+        {
+            return;
+        }
+
         string extend = Enum.GetName(typeof(Camp), camp);
         string prefab = string.Format("{0}_{1}", npcData.prefab, extend);
 
