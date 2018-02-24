@@ -12,7 +12,7 @@ public class StateAttack : StateBase {
 
     public override void OnEnter()
     {
-        skill = goapAgent.UseableSkill();
+        skill = goapAgent.AttackManager.EnableAttack();
 
         base.OnEnter();
         float animationLength = goapAgent.AnimationManager.GetAnimationLength(GetAnimationName());

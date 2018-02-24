@@ -10,6 +10,7 @@ namespace Goap
         protected StateMachine stateMachine;
         protected AnimationManager animationManager;
         protected SkillManager skillManager;
+        protected AttackManager attackManager;
 
         private GoapAgent target;
         private float hpValue = 0;
@@ -17,6 +18,10 @@ namespace Goap
         private NpcData npcData = null;
 
         private Hp hp = null;
+
+        protected virtual void Awake()
+        {
+        }
 
         // Use this for initialization
         protected virtual void Start()
@@ -40,6 +45,7 @@ namespace Goap
             animationManager = new AnimationManager(transform);
 
             skillManager = new SkillManager(this);
+            attackManager = new AttackManager(this);
 
             if (HpControllerPanel.instance != null)
             {
@@ -86,36 +92,9 @@ namespace Goap
         public bool HasTarget { get { return target != null; } }
 
         /// <summary>
-        /// 记录攻击实使用的技能
+        /// 记录攻击使用的技能
         /// </summary>
         public Skill AttackUseSkill { get; set; }
-
-        public Skill UseableSkill()
-        {
-            if (skillManager == null)
-            {
-                return null;
-            }
-            return skillManager.GetUseableSkill();
-        }
-
-        public bool InAttackRange()
-        {
-            if (target == null)
-            {
-                return false;
-            }
-
-            float distance = Vector3.Distance(target.transform.position, transform.position);
-
-            Skill skill = UseableSkill();
-            if (skill == null)
-            {
-                return true;
-            }
-
-            return distance <= skill.Range();
-        }
 
         public bool IsAlive()
         {
@@ -151,6 +130,8 @@ namespace Goap
             transform.LookAt(target.transform);
         }
 
+        public Vector3 Position { get { return transform.position; } }
+
         public AnimationManager AnimationManager { get { return animationManager; } }
 
         /// <summary>
@@ -172,5 +153,15 @@ namespace Goap
         /// 有限状态机
         /// </summary>
         public StateMachine StateMachine { get { return stateMachine; } }
+
+        /// <summary>
+        /// 技能管理
+        /// </summary>
+        public SkillManager SkillManager { get { return skillManager; } }
+
+        /// <summary>
+        /// 攻击管理
+        /// </summary>
+        public AttackManager AttackManager { get { return attackManager; } }
     }
 }

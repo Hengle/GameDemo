@@ -18,7 +18,7 @@ public class StateIdle : StateBase{
 
         if (goapAgent != null && !goapAgent.HasTarget)
         {
-            Skill skill = goapAgent.UseableSkill();
+            Skill skill = goapAgent.AttackManager.EnableAttack();
             if (skill != null)
             {
                 SkillData skillData = skill.SkillData;

@@ -23,8 +23,14 @@ public class SkillManager {
         skillList.Clear();
         for (int i = 0; i < skills.Length; ++i)
         {
-            int npcID = skills[i];
-            Skill skill = new Skill(npcID, i);
+            int skillID = skills[i];
+            SkillData skillData = TableTool.GetTableDataRow<SkillData>(TableType.Skill, skillID);
+            if (skillData == null)
+            {
+                continue;
+            }
+
+            Skill skill = new Skill(skillData, i);
             skillList.Add(skill);
         }
     }

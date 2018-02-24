@@ -103,7 +103,6 @@ public class Hp : ViewController
             ReleaseText(useHpTextList[i]);
         }
 
-        Debug.LogError("Release");
         HpControllerPanel.instance.ReleaseHp(this);
         hpSlider.SetValue(1);
     }

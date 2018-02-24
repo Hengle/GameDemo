@@ -1,30 +1,14 @@
 ﻿using UnityEngine;
 
 public class Skill  {
-
-    private int skillID;
     private SkillData skillData;
     private float coolDown = 0;
     private int index = 0;
 
-    public Skill(int skillID, int index)
+    public Skill(SkillData skillData, int index)
     {
-        this.skillID = skillID;
+        this.skillData = skillData;
         this.index = index;
-
-        Init();
-    }
-	
-    private void Init()
-    {
-        skillData = TableTool.GetTableDataRow<SkillData>(TableType.Skill, skillID);
-        if (skillData == null)
-        {
-            Debug.LogError("SkillData is null : " + skillID);
-            return;
-        }
-
-        //Reset();
     }
 
     public void Reset()

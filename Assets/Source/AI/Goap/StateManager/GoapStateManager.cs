@@ -17,8 +17,6 @@ public class GoapStateManager : IGoal, IStatus
         SetGoal(GoapCondition.attackEnemy, true);
         SetGoal(GoapCondition.inAttackRange, true);
         SetGoal(GoapCondition.idle, true);
-
-        UpdateStatus();
     }
 
     public void OnFrame()
@@ -48,8 +46,8 @@ public class GoapStateManager : IGoal, IStatus
     public void UpdateStatus()
     {
         worldStats.AddState(GoapCondition.hasEnemy, goapAgent.HasTarget);
-        worldStats.AddState(GoapCondition.inAttackRange, goapAgent.InAttackRange());
-        worldStats.AddState(GoapCondition.hasUsableSkill, goapAgent.UseableSkill() != null);
+        worldStats.AddState(GoapCondition.inAttackRange, goapAgent.AttackManager.InAttackRange());
+        worldStats.AddState(GoapCondition.hasUsableSkill, goapAgent.AttackManager.EnableAttack() != null);
     }
 
     public GoapStatus GetWorldStatus()

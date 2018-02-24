@@ -1,5 +1,5 @@
-AssetBundle:d2e8bdcd8b3b84a2baf889f1ec2067b5
-AssetBundle.manifest:78aa215ffd0f45c2f1274619e025cfd2
+AssetBundle:9057014853bc95111108e105972d8232
+AssetBundle.manifest:b21912e00fcbb93b5ae432ff919f50e5
 allassets\prefab\building\dige_ziyuan.unity3d:abcae32b9872a0ae23df292c332851dc
 allassets\prefab\building\dige_ziyuan.unity3d.manifest:263472a861d962d061ec8232886b8b2d
 allassets\prefab\dontdestroy\dontdestroy.unity3d:6731740fa2863ec05aa82b55116713d0
@@ -240,8 +240,8 @@ allassets\spritepackage\resourceicon\resouce_wood.unity3d:c8e502c808a8fa79bf6e2d
 allassets\spritepackage\resourceicon\resouce_wood.unity3d.manifest:acb18d8f07d76077fae53888a54115f7
 allassets\table\language.unity3d:dad45b639735f48b149ca87f71a2a204
 allassets\table\language.unity3d.manifest:510c916703c676a69934bbb5ae9dfbf8
-allassets\table\npc.unity3d:a482ff468842f7385722fb35955aea8d
-allassets\table\npc.unity3d.manifest:447c002d3e45b8a59365d77e4ff46551
+allassets\table\npc.unity3d:89df508de7cc0450e49921dbfe1661d8
+allassets\table\npc.unity3d.manifest:a83eff41dd5b353612f07f7a57d3f646
 allassets\table\skill.unity3d:586d21c52609c61536698ed5e1189261
 allassets\table\skill.unity3d.manifest:0801df352f9461e27927942eba76a21a
 allassets\uianimation\hpvalue.unity3d:f0073173a8ecc30b86d77dc5b64aa6e4
