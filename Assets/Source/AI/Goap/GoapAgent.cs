@@ -12,9 +12,11 @@ namespace Goap
         protected SkillManager skillManager;
 
         private GoapAgent target;
-        private float hp = 0;
+        private float hpValue = 0;
         private int npcId;
         private NpcData npcData = null;
+
+        private Hp hp = null;
 
         // Use this for initialization
         protected virtual void Start()
@@ -41,7 +43,7 @@ namespace Goap
 
             if (HpControllerPanel.instance != null)
             {
-                HpControllerPanel.instance.GetHp(this);
+                hp = HpControllerPanel.instance.GetHp(this);
             }
         }
 
@@ -69,7 +71,7 @@ namespace Goap
             set {
                 npcId = value;
                 npcData = TableTool.GetTableDataRow<NpcData>(TableType.Npc, value);
-                hp = npcData.hp;
+                hpValue = npcData.hp;
             }
         }
 
@@ -117,14 +119,31 @@ namespace Goap
 
         public bool IsAlive()
         {
-            return hp > 0;
+            return hpValue > 0;
         }
 
-        public float Hp { get { return hp; } }
+        public float Hp { get { return hpValue; } }
 
         public void Damage(float value)
         {
-            hp -= value;
+            hpValue -= value;
+
+            RefreshHP(value);
+        }
+
+        public void RefreshHP(float value)
+        {
+            if (hp == null)
+            {
+                return;
+            }
+
+            hp.SetHp((int)value);
+
+            if (!IsAlive())
+            {
+                hp.Release();
+            }
         }
 
         public void LookTarget()

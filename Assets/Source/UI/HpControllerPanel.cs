@@ -8,7 +8,7 @@ using Goap;
 public class HpControllerPanel : UIBase {
     public static HpControllerPanel instance = null;
 
-    private string[] hpNames = new string[] { "HpSliderBlue", "HpSliderRed" };
+    private string[] hpNames = new string[] { "HpBlue", "HpRed" };
     private Dictionary<string, Transform> hpDic = new Dictionary<string, Transform>();
 
     private Dictionary<string, Queue<Transform>> hpQueueDic = new Dictionary<string, Queue<Transform>>();
@@ -42,9 +42,20 @@ public class HpControllerPanel : UIBase {
         
     }
 
-    public void GetHp(GoapAgent goapAgent)
+    public Hp GetHp(GoapAgent goapAgent)
     {
-        string hpName = string.Format("HpSlider{0}", Enum.GetName(typeof(Camp), goapAgent.Camp));
+        Transform hpTr = GetHpTransform(goapAgent);
+        hpTr.gameObject.SetActive(true);
+
+        Hp hp = hpTr.GetComponent<Hp>();
+        hp.SetAgent(goapAgent);
+
+        return hp;
+    }
+
+    private Transform GetHpTransform(GoapAgent goapAgent)
+    {
+        string hpName = string.Format("Hp{0}", Enum.GetName(typeof(Camp), goapAgent.Camp));
 
         if (!hpQueueDic.ContainsKey(hpName))
         {
@@ -65,18 +76,12 @@ public class HpControllerPanel : UIBase {
             hpTr = hpQueueDic[hpName].Dequeue();
         }
 
-        hpTr.gameObject.SetActive(true);
-        SetHpData(hpTr, goapAgent);
+        return hpTr;
     }
 
-    private void SetHpData(Transform hpTr, GoapAgent goapAgent)
+    public void ReleaseHp(Hp hp)
     {
-        Hp hp = hpTr.GetComponent<Hp>();
-        hp.SetAgent(goapAgent);
-    }
-
-    public void ReleaseHp(Transform hpTr)
-    {
+        Transform hpTr = hp.transform;
         if (hpQueueDic[hpTr.name].Count <= cacheCount)
         {
             hpQueueDic[hpTr.name].Enqueue(hpTr);

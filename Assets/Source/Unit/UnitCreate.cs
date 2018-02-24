@@ -7,11 +7,7 @@ public class UnitCreate
 
     public void Create(string unitName, int npcID, Camp camp, Vector3 position)
     {
-        LoadCallBackHandler CallBack = delegate (HandlerParam p_handleParam)
-        {
-            LoadCallBack(p_handleParam);
-        };
-        AssetPool.Instance.Npc.LoadAsset<GameObject>(unitName, CallBack, new object[] { npcID, unitName, camp, position}, true);
+        AssetPool.Instance.Npc.LoadAsset<GameObject>(unitName, LoadCallBack, new object[] { npcID, unitName, camp, position}, true);
     }
 
     private void LoadCallBack(HandlerParam p_handleParam)

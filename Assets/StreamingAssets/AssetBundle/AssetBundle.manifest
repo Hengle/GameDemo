@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1503971640
+CRC: 3609329148
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -465,4 +465,12 @@ AssetBundleManifest:
       Dependencies: {}
     Info_121:
       Name: allassets/prefab/ui/hpcontrollerpanel.unity3d
+      Dependencies:
+        Dependency_0: allassets/uianimation/text.unity3d
+    Info_122:
+      Name: allassets/uianimation/hpvalue.unity3d
       Dependencies: {}
+    Info_123:
+      Name: allassets/uianimation/text.unity3d
+      Dependencies:
+        Dependency_0: allassets/uianimation/hpvalue.unity3d
